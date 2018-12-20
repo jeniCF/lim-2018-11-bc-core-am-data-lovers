@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <title>League Of Legends Championship</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- <link rel="stylesheet" href="css/fontello.css"> -->
+      <meta name="viewport" content="width= device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+      <link rel="shortcut icon" type="image/png" href="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/12/League_of_Legends_Icon.png/revision/latest?cb=20150402234343"/>
+   </head>
+   <body>
+      <!-- Lista de la primera pantalla -->
+      <header>
+         <h1> League of Legends Championsview </h1>
+         <img src="https://i.imgur.com/QJLNskF.png">
+      </header>
+      <main id="pantalla-inicio">
+         <div class="container">
+            
+            <ul class="nav flex-column">
+               <li class="nav-item">
+                  <a href="">HOME</a>
+               </li>
+               <li class="nav-item">
+                  <a href="">ROLES</a>
+               </li>
+               <li class="nav-item">
+                  <a href="">LISTA DE TODOS LOS CAMPEONES</a>
+               </li>
+               <li class="nav-item">
+                  <a href="">NOTICIAS</a>
+               </li>
+            </ul>
+         </div>
+      </main>
+      <article id="lista-de-los-campeones">
+         <!--   aqui va mi lista de elementos de todos los campeones -->
+      </article>
+      <div id="champions-modal" class="champions-modal">
+         <section class="modal-content">
+            <a href="#" title="Close" class="modal-close">Close</a>
+         </section>
+      </div>
+      <script src="./data/lol/lol.js"></script>
+      <script src="data.js"></script>
+      <script src="main.js"></script>
+   </body>
 </html>
