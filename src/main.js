@@ -18,8 +18,7 @@ let functionChampions = (championsData) => {
   <h3>Defensa ${data.info.defense}</h3>
   <h3>Magia ${data.info.magic}</h3>
   <h3>Dificultad ${data.info.difficulty}</h3>
-  </a>
-
+  </a> 
 <div id="champions-modal" class="champions-modal">
   <img class="modal-image" src="${data.splash}" />
 </div>
