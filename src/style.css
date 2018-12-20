@@ -1,12 +1,26 @@
 body {
     background-image: url("http://i.imgur.com/OBOcg19.jpg");
-    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-repeat: no-repeat repeat;
+    background-position: center center;
 
 }
 
 header{
     background-color: #000;
-    width: 90%;
+    width: 100%;
+}
+
+.champions-card-group{
+  display:flex;
+}
+
+.champion-card{
+background-color: #008;
+text-decoration: none;
+padding: 5% 5%;
+flex-grow: 1;
+flex-basis:0;
 }
 
 .champions-modal {
@@ -23,7 +37,5 @@ header{
   
   .modal-close:hover,
   .modal-close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+    
   }
