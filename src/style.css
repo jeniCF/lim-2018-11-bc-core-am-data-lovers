@@ -13,29 +13,29 @@ header{
 
 .champions-card-group{
   display:flex;
+  flex-flow:row wrap;
+  padding: 5%;
+  background-color: #937341;
+
 }
 
 .champion-card{
-background-color: #008;
-text-decoration: none;
-padding: 5% 5%;
+border: 2px solid #463418;
+text-align: center;
+text-justify: inter-word;
+background-color: #DFB879;
+text-decoration: none; /*eliminar las lineas de los href*/
+padding: 1% 1%;
+/* display: inline-block; */
+width: 12.5%;
+height: 20%;
 flex-grow: 1;
+vertical-align: top; /*colocaar las cards en top*/
 flex-basis:0;
+align-items: stretch;
 }
 
-.champions-modal {
-    
-  }
-  
-.modal-content {
- 
-}
+.modal-close{
+  background-color: #002;
 
-  .modal-close {
-    
-  }
-  
-  .modal-close:hover,
-  .modal-close:focus {
-    
-  }
+}

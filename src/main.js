@@ -1,6 +1,5 @@
 
 let containerCards = document.getElementById('champions-cards-group');
-let containerModalsCards = document.getElementById('champions-modal');
 
 const arrKeys = Object.values(LOL.data);
 
@@ -14,23 +13,14 @@ let functionChampions = (championsData) => {
     const list = `
   <a class ="champion-card" href="#champions-modal">
   <input type="image" src="${data.img}"/>
-  <h1>${data.name}</h1>
-  <h3> ${data.title}</h3>
-  <h3>Ataque ${data.info.attack}</h3>
-  <h3>Defensa ${data.info.defense}</h3>
-  <h3>Magia ${data.info.magic}</h3>
-  <h3>Dificultad ${data.info.difficulty}</h3>
+  <h1>${data.name}</h1> 
   </a> `;
-    const modal = `
-  <img class="modal-image" src="${data.splash}" />
-`;
+    
     championsCard += list;
-    championsModal += modal;
     containerCards.innerHTML = championsCard;
-    containerModalsCards.innerHTML = championsModal;
   });
 
-  return championsCard, championsModal;
+  return championsCard;
 };
 
 functionChampions(arrKeys);
@@ -41,3 +31,16 @@ functionChampions(arrKeys);
 window.LOL = {
   functionChampions,
 } 
+
+/* let containerModalsCards = document.getElementById('champions-modal');
+  <h3> ${data.title}</h3>
+
+<h3>Ataque ${data.info.attack}</h3>
+<h3>Defensa ${data.info.defense}</h3>
+<h3>Magia ${data.info.magic}</h3>
+<h3>Dificultad ${data.info.difficulty}</h3>
+    championsModal += modal;
+    const modal = `
+    <img class="modal-image" src="${data.splash}" />
+  `;
+containerModalsCards.innerHTML = championsModal; */
