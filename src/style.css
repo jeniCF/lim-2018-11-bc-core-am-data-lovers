@@ -16,7 +16,8 @@ header{
   flex-flow:row wrap;
   padding: 5%;
   background-color: #937341;
-
+  align-items: stretch;
+  /* justify-items: stretch; */
 }
 
 .champion-card{
@@ -31,8 +32,8 @@ width: 12.5%;
 height: 20%;
 flex-grow: 1;
 vertical-align: top; /*colocaar las cards en top*/
-flex-basis:0;
-align-items: stretch;
+/* flex-basis:0; */
+
 }
 
 .modal-close{
