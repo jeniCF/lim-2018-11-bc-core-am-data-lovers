@@ -40,41 +40,66 @@
 
   <section>
     <form class="formulario">
-      <div class="checkbox">
-        <input type="checkbox" name="checkbox" id="Controller">
-        <label for="Controller">Controller</label>
+      <div class="checkbox-container">
+        <input type="checkbox" value="Controller" id="controller" class= "checkbox" >
+        <label for="controller">Controller</label>
 
-        <input type="checkbox" name="checkbox1" id="Fighter">
-        <label for="Fighter">Fighter</label>
+        <input type="checkbox" value="Fighter" id="fighter" class= "checkbox">
+        <label for="fighter">Fighter</label>
 
-        <input type="checkbox" name="checkbox2" id="Mage">
-        <label for="Mage">Mage</label>
+        <input type="checkbox" value="Mage" id="mage" class= "checkbox">
+        <label for="mage">Mage</label>
 
-        <input type="checkbox" name="checkbox3" id="Marksman">
-        <label for="Marksman">Marksman</label>
+        <input type="checkbox" value="Marksman" id="marksman"class= "checkbox">
+        <label for="marksman">Marksman</label>
 
-        <input type="checkbox" name="checkbox4" id="Slayer">
-        <label for="Slayer">Slayer</label>
+        <input type="checkbox" value="Slayer" id="slayer"class= "checkbox">
+        <label for="slayer">Slayer</label>
 
-        <input type="checkbox" name="checkbox5" id="Tank">
-        <label for="Tank">Tank</label>
+        <input type="checkbox" value="Tank" id="tank" class= "checkbox">
+        <label for="tank">Tank</label>
 
         <input type="search" id="input-search" placeholder="Buscar aqui">
+  
     </form>
   </section>
   <div id='champions-list'>
     <section id="champions-cards-group" class="champions-card-group">
       <!--   aqui va mi lista de elementos de todos los campeones -->
     </section>
-    <div id="champions-modal" class="champions-modal">
-      <section class="modal-content">
-        <a href="#" title="Close" class="modal-close">Close</a>
-      </section>
+    <div id="champions-modal-container" class="champions-modal-container">
+     <form>
+       <section>
+        <p>Nivel:</p>
+        <select> 
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>      
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>      
+            <option value="18">18</option>
+          </select>
+        </section>  
+     </form>
     </div>
    </div>
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+
+
 </body>
 
 </html>

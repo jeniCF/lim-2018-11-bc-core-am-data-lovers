@@ -1,47 +1,57 @@
-/* esta es una función de ejemplo
-puedes ver como agregamos la función a nuestro objeto global window
 
- const example = (arr) => {
-       const arrKeys = Object.keys(data)
-   for(let i = 0; i < arrKeys.length; i++){
-console.log(arrKeys[i])
-     console.log(data[arrKeys[i]])
-}
-return example;
-};
 
-window.example = example; */
+const originalArrKeysData = Object.assign({}, window.LOL);
+const arrKeysData = Object.values(originalArrKeysData.data);
 
 const checkbox = Object.values(document.getElementsByClassName('checkbox'));
-console.log(checkbox);
 
-let selectedTags= [];
+let selectedTags = [];
 
-checkbox.forEach((tag) =>{
-  tag.addEventListener ('change', () => {
-    if (event.target.checked) {
-      selectedTags.push(tag.value);
-    
-    }
-    else {
-      x= selectedTags.indexOf(tag.value)
-      selectedTags.splice(x,1)
-      functionChampions(arrKeys);
-    }
-  })
-})
+let functionFilter = ((ele)=> {
+  checkbox.forEach((tag) => {
+    tag.addEventListener('change', () => {
+      if (event.target.checked) {
+        selectedTags.push(tag.value);
+      } else {
+        let io = selectedTags.indexOf(tag.value);
+        selectedTags.splice(io, 1);
+        functionChampions(arrKeysData);
+      }
 
+      const arrKeysFilter = arrKeysData.filter(data => {
+        const trueAndFalseArray = [];
+        selectedTags.forEach(choice => {
+          if (data.tags.includes(choice)) {
+            trueAndFalseArray.push(true);
+          } else {
+            trueAndFalseArray.push(false);
+          }
+        });
+        if (trueAndFalseArray.includes(false)) {
+          return false;
+        } else {
+          return data;
+        }
+      });
+      functionChampions(arrKeysFilter);
+    });
+  });
+});
 
-const dataCopy = Object.assign({},LOL.data) 
+/* 
+const dataCopy = Object.assign({}, LOL.data);
 const arrayCopy = Object.values(dataCopy);
 
 
 const dataFilter = (data, condition) => {
- return data.filter ((eleTags) => {
-  return eleTags.tags.includes(condition) === true;
- });
+  return data.filter((eleTags) => {
+    return eleTags.tags.includes(condition) === true;
+  });
 };
+dataFilter(arrayCopy, 'Mage').forEach((ele) => {
+  console.log('result = ' + ele.id);
+}); */
 
-dataFilter(arrayCopy, 'Mage').forEach((ele)=>{
-  console.log('result = '+ ele.id);
-});
+window.lol = {
+  functionFilter,
+};
