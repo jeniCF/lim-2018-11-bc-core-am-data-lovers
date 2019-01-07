@@ -1,7 +1,7 @@
 
 
-const originalArrKeysData = Object.assign({}, LOL.data);
-const arrKeysData = Object.values(originalArrKeysData);
+const originalArrKeysData = Object.assign({}, window.LOL);
+const arrKeysData = Object.values(originalArrKeysData.data);
 
 /* global functionChampions : true */
 
@@ -10,8 +10,8 @@ const checkbox = Object.values(document.getElementsByClassName('checkbox'));
 
 let selectedTags = [];
 
-let functionFilter = (() => {
-  checkbox.forEach((tag) => {
+let functionFilter = ((ele) => {
+  ele.forEach((tag) => {
     tag.addEventListener('change', () => {
       if (event.target.checked) {
         selectedTags.push(tag.value);
@@ -40,6 +40,7 @@ let functionFilter = (() => {
     });
   });
 });
+functionFilter(checkbox);
 /* 
 const dataCopy = Object.assign({}, LOL.data);
 const arrayCopy = Object.values(dataCopy);
