@@ -1,6 +1,6 @@
 
 
-const originalArrKeysData = Object.assign({}, LOL);
+const originalArrKeysData = Object.assign({}, LOL.data);
 const arrKeysData = Object.values(originalArrKeysData);
 
 /* global functionChampions : true */
