@@ -4,6 +4,7 @@ let containerModalsCards = document.getElementById('champions-modal-container');
 const originalArrKeys = Object.assign({}, window.LOL);
 const arrKeys = Object.values(originalArrKeys.data);
 
+
 let functionChampions = (championsData) => {
   let championsCard = '';
   let championsModal = '';
@@ -67,7 +68,7 @@ let functionChampions = (championsData) => {
     let arrCard = Array.from(collectionCard);
 
     arrCard.forEach((modal, index) => {
-      modal.addEventListener('click', myFunction);
+      modal.addEventListener('click', myFunction);              
       function myFunction() {
         arrModal[index].style.display = 'block';
       }
@@ -76,3 +77,4 @@ let functionChampions = (championsData) => {
   return championsData;
 };
 functionChampions(arrKeys);
+
