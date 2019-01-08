@@ -1,45 +1,23 @@
 
-
-const originalArrKeysData = Object.assign({}, LOL.data);
-const arrKeysData = Object.values(originalArrKeysData);
-
-/* global functionChampions : true */
-
-
-const checkbox = Object.values(document.getElementsByClassName('checkbox'));
-
-let selectedTags = [];
-
-let functionFilter = (() => {
-  checkbox.forEach((tag) => {
-    tag.addEventListener('change', () => {
-      if (event.target.checked) {
-        selectedTags.push(tag.value);
+let functionFilter = ((arr, choice) => {
+  arr.filter(data => {
+    const trueAndFalseArray = [];
+    choice.forEach(value => {
+      if (data.tags.includes(value)) {
+        trueAndFalseArray.push(true);
       } else {
-        let io = selectedTags.indexOf(tag.value);
-        selectedTags.splice(io, 1);
-        functionChampions(arrKeysData);
+        trueAndFalseArray.push(false);
       }
-
-      const arrKeysFilter = arrKeysData.filter(data => {
-        const trueAndFalseArray = [];
-        selectedTags.forEach(choice => {
-          if (data.tags.includes(choice)) {
-            trueAndFalseArray.push(true);
-          } else {
-            trueAndFalseArray.push(false);
-          }
-        });
-        if (trueAndFalseArray.includes(false)) {
-          return false;
-        } else {
-          return data;
-        }
-      });
-      functionChampions(arrKeysFilter);
     });
+    if (trueAndFalseArray.includes(false)) {
+      return false;
+    } else {
+      return data;
+    }
   });
 });
+
+
 /* 
 const dataCopy = Object.assign({}, LOL.data);
 const arrayCopy = Object.values(dataCopy);

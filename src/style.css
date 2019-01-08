@@ -1,17 +1,29 @@
 body {
-    background-image: url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg.jpg");
+    /* background-image: url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg"); */
     background-size: cover;
     background-repeat: no-repeat repeat;
     background-position: center center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 250px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
 }
 
 header{
-  background-color: #000;
   width: 100%;
   text-align: center;
   justify-content: center;
   display: inline-block
+}
+.button-text{
+  position: relative;
+  width: 132.17px;
+  height: 50.96px;
+  font-family: Jacques Francois;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 38.2184px;
+  text-align: justify;
+  text-shadow: 0px 3.18487px 3.18487px rgba(0, 0, 0, 0.25);
 }
 
 section{
@@ -66,7 +78,6 @@ text-align: center;
  .champions-card-group{
   display:flex;
   flex-flow:row wrap;
-  padding: 5%;
   background-color: #937341;
   align-items: stretch;
   /* justify-items: stretch; */
@@ -106,8 +117,8 @@ vertical-align: top; /*colocaar las cards en top*/
 
 .champion-info{
   position: absolute;
-  bottom: 300px;
-  left:10rem;
+  bottom: 20%;
+  left:15%;
   color: white;
   background-color: black;
 }

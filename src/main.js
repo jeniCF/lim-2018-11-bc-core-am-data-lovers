@@ -4,10 +4,14 @@ let containerModalsCards = document.getElementById('champions-modal-container');
 const originalArrKeys = Object.assign({}, window.LOL);
 const arrKeys = Object.values(originalArrKeys.data);
 
+const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
 
 let functionChampions = (championsData) => {
   let championsCard = '';
   let championsModal = '';
+
+  // console.log('hola =' + championsData);
+  
   championsData.forEach((data) => {
     const listChampionCard = `
   <a class ='champion-card' href='#champions-modal'>
@@ -68,13 +72,38 @@ let functionChampions = (championsData) => {
     let arrCard = Array.from(collectionCard);
 
     arrCard.forEach((modal, index) => {
-      modal.addEventListener('click', myFunction);              
+      modal.addEventListener('click', myFunction);
+
       function myFunction() {
         arrModal[index].style.display = 'block';
       }
     });
   });
-  return championsData;
+  return championsCard;
 };
 functionChampions(arrKeys);
 
+let checkboxArrayFunction = (checkbox) => {
+  let selectedTags = [];
+  checkbox.forEach((tag) => {
+    tag.addEventListener('change', () => {
+      if (tag.checked === true) {
+        selectedTags.push(tag.value);
+      } else {
+        let io = selectedTags.indexOf(tag.value);
+        selectedTags.splice(io, 1);
+        functionChampions();
+      }
+      console.log('los seleccionados' + selectedTags);
+
+    });
+  });
+  return selectedTags;
+};
+checkboxArrayFunction(checkboxArray);
+
+console.log('lo que sale de la funcion sta' + checkboxArrayFunction(checkboxArray));
+
+
+let result = window.lol.functionFilter(arrKeys, checkboxArrayFunction(checkboxArray));
+functionChampions(result); 
