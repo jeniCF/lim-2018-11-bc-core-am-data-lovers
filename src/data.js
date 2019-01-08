@@ -18,6 +18,10 @@ let functionFilter = ((arr, choice) => {
 });
 
 
+let functionSort = ((data) => {
+  data.name.sort()
+});
+
 /* 
 const dataCopy = Object.assign({}, LOL.data);
 const arrayCopy = Object.values(dataCopy);
@@ -34,4 +38,5 @@ dataFilter(arrayCopy, 'Mage').forEach((ele) => {
 
 window.lol = {
   functionFilter,
+  functionSort,
 };
