@@ -1,15 +1,26 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+const mostrarArray = (data)=>{
+  let arrayMostrado = [];
+  for(let i = 0; i < data.length ; i++){
+    arrayMostrado.push({name: data[i].name, img: data[i].img, defense: data[i].info.defense, magic: data[i].info.magic, difficulty: data[i].info.difficulty});
+  }
+  return arrayMostrado;
+}
 
-// const example = (arr) => {
-//   const arrKeys = Object.keys(data)
-//   for(let i = 0; i < arrKeys.length; i++){
-//     //console.log(arrKeys[i])
-//     console.log(data[arrKeys[i]])
-// }
-//   return example;
-// };
+const buscarNombre = (data, nombre) => {
+  let x = [];
+    for(let i = 0 ; i < data.length ; i++){
+      if(data[i].name === nombre){
+        x.push({img: data[i].img, name: data[i].name, defense: data[i].info.defense, magic: data[i].info.magic, difficulty: data[i].info.difficulty});
+      }
+    }
+    return x;
+  }
 
-// window.example = example;
 
 
+
+
+window.lol = {
+  mostrarArray,
+  buscarNombre,
+};
