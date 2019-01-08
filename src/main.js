@@ -5,7 +5,6 @@ const originalArrKeys = Object.assign({}, window.LOL);
 const arrKeys = Object.values(originalArrKeys.data);
 
 const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
-let orderLol= document.getElementById('order-data');
 
 
 let functionChampions = (championsData) => {
@@ -85,25 +84,23 @@ let functionChampions = (championsData) => {
 };
 functionChampions(arrKeys);
 
-let checkboxArrayFunction = (checkbox) => {
-  let selectedTags = [];
-  checkbox.forEach((tag) => {
+
+const functionCheckbox = ((check) => {
+
+  let checkvalues = [];
+
+  check.forEach((tag) => {
+
     tag.addEventListener('change', () => {
-      if (tag.checked === true) {
-        selectedTags.push(tag.value);
+      if (event.target.checked === true) {
+        checkvalues.push(tag.value);
       } else {
-        let io = selectedTags.indexOf(tag.value);
-        selectedTags.splice(io, 1);
+        let ck = checkvalues.indexOf(tag.value);
+        checkvalues.splice(ck, 1);
         functionChampions(arrKeys);
       }
+      functionChampions(window.lol.filterChampions(arrKeys, checkvalues));
     });
   });
-  return selectedTags;
-};
-checkboxArrayFunction(checkboxArray);
-
-console.log('lo que sale de la funcion sta' + checkboxArrayFunction(checkboxArray));
-
-functionChampions(window.lol.functionFilter(arrKeys, checkboxArrayFunction(checkboxArray))); 
-
-orderLol
+});
+functionCheckbox(checkboxArray);

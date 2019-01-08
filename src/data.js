@@ -1,42 +1,30 @@
 
-let functionFilter = ((arr, choice) => {
-  arr.filter(data => {
-    const trueAndFalseArray = [];
-    choice.forEach(value => {
-      if (data.tags.includes(value)) {
-        trueAndFalseArray.push(true);
+
+let filterChampions = ((data, arrValuesCheck) => {
+
+  const functionFilter = data.filter(arrElement => {
+
+    let booleanArray = [];
+
+    arrValuesCheck.forEach(value => {
+      if (arrElement.tags.includes(value)) {
+        booleanArray.push(true);
       } else {
-        trueAndFalseArray.push(false);
+        booleanArray.push(false);
       }
     });
-    if (trueAndFalseArray.includes(false)) {
+
+    if (booleanArray.includes(false)) {
       return false;
     } else {
-      return data;
+      return arrElement;
     }
+
+
   });
+  return functionFilter;
 });
-
-
-let functionSort = ((data) => {
-  data.name.sort()
-});
-
-/* 
-const dataCopy = Object.assign({}, LOL.data);
-const arrayCopy = Object.values(dataCopy);
-
-
-const dataFilter = (data, condition) => {
-  return data.filter((eleTags) => {
-    return eleTags.tags.includes(condition) === true;
-  });
-};
-dataFilter(arrayCopy, 'Mage').forEach((ele) => {
-  console.log('result = ' + ele.id);
-}); */
 
 window.lol = {
-  functionFilter,
-  functionSort,
+  filterChampions,
 };

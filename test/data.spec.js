@@ -1,6 +1,6 @@
 require('../src/data.js');
 
-const LOL = {
+const lol = {
   type: 'champion',
   format: 'standAloneComplex',
   version: '6.24.1',
@@ -27,10 +27,6 @@ const LOL = {
         full: 'Aatrox.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 0,
-        y: 0,
-        w: 48,
-        h: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'BloodWell',
@@ -79,10 +75,6 @@ const LOL = {
         full: 'Ahri.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 48,
-        y: 0,
-        w: 48,
-        h: 48
       },
       tags: ['Mage', 'Assassin'],
       partype: 'MP',
@@ -131,10 +123,6 @@ const LOL = {
         full: 'Akali.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 96,
-        y: 0,
-        w: 48,
-        h: 48
       },
       tags: ['Assassin'],
       partype: 'Energy',
@@ -183,10 +171,6 @@ const LOL = {
         full: 'Alistar.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 144,
-        y: 0,
-        w: 48,
-        h: 48
       },
       tags: ['Tank', 'Support'],
       partype: 'MP',
@@ -235,10 +219,6 @@ const LOL = {
         full: 'Amumu.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 192,
-        y: 0,
-        w: 48,
-        h: 48
       },
       tags: ['Tank', 'Mage'],
       partype: 'MP',
@@ -287,10 +267,6 @@ const LOL = {
         full: 'Anivia.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 240,
-        y: 0,
-        w: 48,
-        h: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -328,8 +304,8 @@ Ravenclaw: 'https://images-mm.s3.amazonaws.com/HP_Ravenclaw_Emb_Patch_POP.jpg'
 */
 
 
-describe('LOL', () => {
+describe('lol', () => {
   it('Debería ser un objeto', () => {
-    expect(typeof LOL).toBe('object');
+    expect(typeof lol).toBe('object');
   });
 });
