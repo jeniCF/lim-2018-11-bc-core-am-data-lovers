@@ -6,6 +6,9 @@ const arrKeys = Object.values(originalArrKeys.data);
 
 const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
 
+let orderLol = document.getElementById('order-data');
+let ascendant = document.getElementById('ascendant');
+
 
 let functionChampions = (championsData) => {
   let championsCard = '';
@@ -70,6 +73,7 @@ let functionChampions = (championsData) => {
     let arrModal = Array.from(collectionModal);
 
     let collectionCard = document.querySelectorAll('.champion-card');
+  
     let arrCard = Array.from(collectionCard);
 
     arrCard.forEach((modal, index) => {
@@ -90,7 +94,6 @@ const functionCheckbox = ((check) => {
   let checkvalues = [];
 
   check.forEach((tag) => {
-
     tag.addEventListener('change', () => {
       if (event.target.checked === true) {
         checkvalues.push(tag.value);
@@ -104,3 +107,9 @@ const functionCheckbox = ((check) => {
   });
 });
 functionCheckbox(checkboxArray);
+
+
+orderLol.addEventListener('change', () => {
+  functionChampions(window.lol.funcionorden(arrKeys, ascendant));
+});
+ 

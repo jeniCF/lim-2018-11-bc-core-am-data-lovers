@@ -25,6 +25,32 @@ let filterChampions = ((data, arrValuesCheck) => {
   return functionFilter;
 });
 
+
+const funcionorden = (data, select) => {
+  let arrayData = [];
+
+  data.forEach((elementoiterado) => {
+    arrayData.push(elementoiterado);
+    arrayData.sort((a, b) => {
+      if (a.name > b.name) {
+        return 1;
+      }
+      if (a.name < b.name) {
+        return -1;
+      }
+      return 0;
+    });
+
+    if (select.selected === true) {
+      return arrayData;
+    } else {
+      return arrayData.reverse();
+    }
+  });
+  return arrayData;
+};
+
 window.lol = {
   filterChampions,
+  funcionorden,
 };
