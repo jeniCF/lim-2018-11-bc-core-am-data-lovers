@@ -1,9 +1,7 @@
 
 
 let filterChampions = ((data, arrValuesCheck) => {
-
   const functionFilter = data.filter(arrElement => {
-
     let booleanArray = [];
 
     arrValuesCheck.forEach(value => {
@@ -19,29 +17,27 @@ let filterChampions = ((data, arrValuesCheck) => {
     } else {
       return arrElement;
     }
-
-
   });
   return functionFilter;
 });
 
-
-const funcionorden = (data, select) => {
+const sortFunction = (data, select) => {
   let arrayData = [];
+  
 
-  data.forEach((elementoiterado) => {
-    arrayData.push(elementoiterado);
-    arrayData.sort((a, b) => {
-      if (a.name > b.name) {
+  data.forEach((ele) => {
+    arrayData.push(ele);
+    arrayData.sort((valor1, valor2) => {
+      if (valor1.name > valor2.name) {
         return 1;
       }
-      if (a.name < b.name) {
+      if (valor1.name < valor2.name) {
         return -1;
       }
       return 0;
     });
 
-    if (select.selected === true) {
+    if (select === true) {
       return arrayData;
     } else {
       return arrayData.reverse();
@@ -52,5 +48,5 @@ const funcionorden = (data, select) => {
 
 window.lol = {
   filterChampions,
-  funcionorden,
+  sortFunction,
 };

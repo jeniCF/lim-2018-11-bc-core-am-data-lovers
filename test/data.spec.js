@@ -11,12 +11,9 @@ const lol = {
       key: '266',
       name: 'Aatrox',
       title: 'the Darkin Blade',
-      img:
-        'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
-      splash:
-        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
-      blurb:
-        'Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled',
+      img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
+      splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
+      blurb: 'Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled',
       info: {
         attack: 8,
         defense: 4,
@@ -59,12 +56,9 @@ const lol = {
       key: '103',
       name: 'Ahri',
       title: 'the Nine-Tailed Fox',
-      img:
-        'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png',
-      splash:
-        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
-      blurb:
-        'Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for ...',
+      img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png',
+      splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
+      blurb: 'Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for ...',
       info: {
         attack: 3,
         defense: 4,
@@ -107,12 +101,9 @@ const lol = {
       key: '84',
       name: 'Akali',
       title: 'the Fist of Shadow',
-      img:
-        'https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png',
-      splash:
-        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg',
-      blurb:
-        'There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe. This order is known as the Kinkou ...',
+      img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png',
+      splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg',
+      blurb: 'There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe. This order is known as the Kinkou ...',
       info: {
         attack: 5,
         defense: 3,
@@ -155,12 +146,9 @@ const lol = {
       key: '12',
       name: 'Alistar',
       title: 'the Minotaur',
-      img:
-        'https://www.masterypoints.com/assets/img/lol/champion_icons/Alistar.png',
-      splash:
-        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg',
-      blurb:
-        'As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valorans many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of ...',
+      img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Alistar.png',
+      splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg',
+      blurb: 'As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valorans many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of ...',
       info: {
         attack: 6,
         defense: 9,
@@ -203,12 +191,9 @@ const lol = {
       key: '32',
       name: 'Amumu',
       title: 'the Sad Mummy',
-      img:
-        'https://www.masterypoints.com/assets/img/lol/champion_icons/Amumu.png',
-      splash:
-        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg',
-      blurb:
-        'Solitude can be lonelier than death. A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever, as his touch is death and his affection ...',
+      img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Amumu.png',
+      splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg',
+      blurb: 'Solitude can be lonelier than death. A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever, as his touch is death and his affection ...',
       info: {
         attack: 2,
         defense: 6,
@@ -251,12 +236,9 @@ const lol = {
       key: '34',
       name: 'Anivia',
       title: 'the Cryophoenix',
-      img:
-        'https://www.masterypoints.com/assets/img/lol/champion_icons/Anivia.png',
-      splash:
-        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg',
-      blurb:
-        'Anivia is a being of the coldest winter, a mystical embodiment of ice magic, and an ancient protector of the Freljord. She commands all the power and fury of the land itself, calling the snow and bitter wind to defend her home from those who would ...',
+      img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Anivia.png',
+      splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg',
+      blurb: 'Anivia is a being of the coldest winter, a mystical embodiment of ice magic, and an ancient protector of the Freljord. She commands all the power and fury of the land itself, calling the snow and bitter wind to defend her home from those who would ...',
       info: {
         attack: 1,
         defense: 4,
@@ -296,6 +278,243 @@ const lol = {
   },
 };
 
+const inputFilter1 = [{
+  version: '6.24.1',
+  id: 'Ahri',
+  key: '103',
+  name: 'Ahri',
+  title: 'the Nine-Tailed Fox',
+  img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png',
+  splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
+  blurb: 'Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for ...',
+  info: {
+    attack: 3,
+    defense: 4,
+    magic: 8,
+    difficulty: 5
+  },
+  image: {
+    full: 'Ahri.png',
+    sprite: 'champion0.png',
+    group: 'champion',
+  },
+  tags: ['Mage', 'Assassin'],
+  partype: 'MP',
+  stats: {
+    hp: 514.4,
+    hpperlevel: 80,
+    mp: 334,
+    mpperlevel: 50,
+    movespeed: 330,
+    armor: 20.88,
+    armorperlevel: 3.5,
+    spellblock: 30,
+    spellblockperlevel: 0,
+    attackrange: 550,
+    hpregen: 6.505,
+    hpregenperlevel: 0.6,
+    mpregen: 6,
+    mpregenperlevel: 0.8,
+    crit: 0,
+    critperlevel: 0,
+    attackdamage: 53.04,
+    attackdamageperlevel: 3,
+    attackspeedoffset: -0.065,
+    attackspeedperlevel: 2
+  }
+},
+{
+  version: '6.24.1',
+  id: 'Aatrox',
+  key: '266',
+  name: 'Aatrox',
+  title: 'the Darkin Blade',
+  img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
+  splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
+  blurb: 'Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox...',
+  info: {
+    attack: 8,
+    defense: 4,
+    magic: 3,
+    difficulty: 4
+  },
+  image: {
+    full: 'Aatrox.png',
+    sprite: 'champion0.png',
+    group: 'champion',
+  },
+  tags: ['Fighter', 'Tank'],
+  partype: 'BloodWell',
+  stats: {
+    hp: 537.8,
+    hpperlevel: 85,
+    mp: 105.6,
+    mpperlevel: 45,
+    movespeed: 345,
+    armor: 24.384,
+    armorperlevel: 3.8,
+    spellblock: 32.1,
+    spellblockperlevel: 1.25,
+    attackrange: 150,
+    hpregen: 6.59,
+    hpregenperlevel: 0.5,
+    mpregen: 0,
+    mpregenperlevel: 0,
+    crit: 0,
+    critperlevel: 0,
+    attackdamage: 60.376,
+    attackdamageperlevel: 3.2,
+    attackspeedoffset: -0.04,
+    attackspeedperlevel: 3
+  }
+}
+];
+
+const inputFilter2 = ['Tank', 'Fighter'];
+
+const output = [{
+  version: '6.24.1',
+  id: 'Aatrox',
+  key: '266',
+  name: 'Aatrox',
+  title: 'the Darkin Blade',
+  img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
+  splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
+  blurb: 'Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox...',
+  info: {
+    attack: 8,
+    defense: 4,
+    magic: 3,
+    difficulty: 4
+  },
+  image: {
+    full: 'Aatrox.png',
+    sprite: 'champion0.png',
+    group: 'champion',
+  },
+  tags: ['Fighter', 'Tank'],
+  partype: 'BloodWell',
+  stats: {
+    hp: 537.8,
+    hpperlevel: 85,
+    mp: 105.6,
+    mpperlevel: 45,
+    movespeed: 345,
+    armor: 24.384,
+    armorperlevel: 3.8,
+    spellblock: 32.1,
+    spellblockperlevel: 1.25,
+    attackrange: 150,
+    hpregen: 6.59,
+    hpregenperlevel: 0.5,
+    mpregen: 0,
+    mpregenperlevel: 0,
+    crit: 0,
+    critperlevel: 0,
+    attackdamage: 60.376,
+    attackdamageperlevel: 3.2,
+    attackspeedoffset: -0.04,
+    attackspeedperlevel: 3
+  }
+}];
+
+const inputSort1 = true;
+const inputSort2 = false;
+
+const outputsort1 = [
+  {
+    version: '6.24.1',
+    id: 'Aatrox',
+    key: '266',
+    name: 'Aatrox',
+    title: 'the Darkin Blade',
+    img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
+    splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
+    blurb: 'Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox...',
+    info: {
+      attack: 8,
+      defense: 4,
+      magic: 3,
+      difficulty: 4
+    },
+    image: {
+      full: 'Aatrox.png',
+      sprite: 'champion0.png',
+      group: 'champion',
+    },
+    tags: ['Fighter', 'Tank'],
+    partype: 'BloodWell',
+    stats: {
+      hp: 537.8,
+      hpperlevel: 85,
+      mp: 105.6,
+      mpperlevel: 45,
+      movespeed: 345,
+      armor: 24.384,
+      armorperlevel: 3.8,
+      spellblock: 32.1,
+      spellblockperlevel: 1.25,
+      attackrange: 150,
+      hpregen: 6.59,
+      hpregenperlevel: 0.5,
+      mpregen: 0,
+      mpregenperlevel: 0,
+      crit: 0,
+      critperlevel: 0,
+      attackdamage: 60.376,
+      attackdamageperlevel: 3.2,
+      attackspeedoffset: -0.04,
+      attackspeedperlevel: 3
+    }
+  },
+  {
+    version: '6.24.1',
+    id: 'Ahri',
+    key: '103',
+    name: 'Ahri',
+    title: 'the Nine-Tailed Fox',
+    img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png',
+    splash: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
+    blurb: 'Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for ...',
+    info: {
+      attack: 3,
+      defense: 4,
+      magic: 8,
+      difficulty: 5
+    },
+    image: {
+      full: 'Ahri.png',
+      sprite: 'champion0.png',
+      group: 'champion',
+    },
+    tags: ['Mage', 'Assassin'],
+    partype: 'MP',
+    stats: {
+      hp: 514.4,
+      hpperlevel: 80,
+      mp: 334,
+      mpperlevel: 50,
+      movespeed: 330,
+      armor: 20.88,
+      armorperlevel: 3.5,
+      spellblock: 30,
+      spellblockperlevel: 0,
+      attackrange: 550,
+      hpregen: 6.505,
+      hpregenperlevel: 0.6,
+      mpregen: 6,
+      mpregenperlevel: 0.8,
+      crit: 0,
+      critperlevel: 0,
+      attackdamage: 53.04,
+      attackdamageperlevel: 3,
+      attackspeedoffset: -0.065,
+      attackspeedperlevel: 2
+    }
+  },
+
+];
+
 /* convención de insginias 
 Gryffindor : 'https://images-mm.s3.amazonaws.com/HP_Gryf_Rubber_Crest_Magnet_POP.jpg'
 Slytherin : 'https://www.logolynx.com/images/logolynx/03/03dbf0844ed87fe57429a519488ff3d4.jpeg'
@@ -309,3 +528,27 @@ describe('lol', () => {
     expect(typeof lol).toBe('object');
   });
 });
+
+describe('lol.filterChampions', () => {
+  it('debería ser una función', () => {
+    expect(typeof window.lol.filterChampions).toBe('function');
+  });
+
+  it('debería retornar un array de objetos, con el valor de la propiedad tag filtrado por tank y fighter', () => {
+    expect(window.lol.filterChampions(inputFilter1, inputFilter2)).toEqual(output);
+  });
+});
+describe('lol.sortFunction', () => {
+  it('debería ser una función', () => {
+    expect(typeof window.lol.sortFunction).toBe('function');
+  });
+
+  it('debería retornar un array de objetos, con el valor de la propiedad tag filtrado por tank y fighter', () => {
+    expect(window.lol.sortFunction(inputFilter1, inputSort1)).toEqual(outputsort1);
+  });
+
+  it('debería retornar un array de objetos, con el valor de la propiedad tag filtrado por tank y fighter', () => {
+    expect(window.lol.sortFunction(inputFilter1, inputSort2)).toEqual(inputFilter1);
+  });
+});
+

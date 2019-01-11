@@ -4,6 +4,7 @@ let containerModalsCards = document.getElementById('champions-modal-container');
 const originalArrKeys = Object.assign({}, window.LOL);
 const arrKeys = Object.values(originalArrKeys.data);
 
+
 const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
 
 let orderLol = document.getElementById('order-data');
@@ -90,7 +91,6 @@ functionChampions(arrKeys);
 
 
 const functionCheckbox = ((check) => {
-
   let checkvalues = [];
 
   check.forEach((tag) => {
@@ -110,6 +110,34 @@ functionCheckbox(checkboxArray);
 
 
 orderLol.addEventListener('change', () => {
-  functionChampions(window.lol.funcionorden(arrKeys, ascendant));
+  functionChampions(window.lol.sortFunction(arrKeys, ascendant.selected));
 });
  
+
+const minMax = document.getElementById('min-max');
+
+
+let hpselect = document.getElementById('hp-select');
+console.log(hpselect.value);
+
+functionMaxMin = (data,select) =>{  
+  let minMaxvar = '';
+select.addEventListener('change', () =>{
+  let maxreal= select.value;
+  console.log(maxreal);
+
+  data.forEach((ele) => {
+  let max = ele.stats.hp + maxreal*ele.stats.hpperlevel;
+  let hpList = `
+  <p>
+  <span> Salud de ${ele.name}: ${ele.stats.hp}(min) - ${max} </span>
+</p>
+  `;
+  minMaxvar += hpList;
+  minMax.innerHTML = minMaxvar;
+  });
+  return minMaxvar
+});
+};
+functionMaxMin(arrKeys, hpselect);
+    
