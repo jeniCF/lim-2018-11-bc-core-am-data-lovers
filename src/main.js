@@ -1,54 +1,79 @@
-let containerCards = document.getElementById('container-cards');
-let cardName = document.getElementById('card-name');
-let inputSearch = document.getElementById('input-search');
-const arrKeys = Object.values(LOL.data);
-const emptyArray = [];
+let containerCards = document.getElementById('champions-cards-group');
+let containerModalsCards = document.getElementById('champions-modal-container');
+
+const originalArrKeys = Object.assign({}, window.LOL);
+const arrKeys = Object.values(originalArrKeys.data);
 
 
 let functionChampions = (championsData) => {
- // let championsName = Object.keys(datas);
- // let championsData = Object.values(datas);
- let championsCard = '';
-/* EL DIV DE LA IMAGEN GRANDE
-<div id="champions-modal" class="champions-modal">
- <img class="modal-image" src="${data.splash}" />
- </div>
-*/
- championsData.forEach((data) => { // href="#champions-modal"
-   const list = `
- <div class ="card-button">  
- <img class="image" src="${data.img}"/>
- <list class="etiqueta">${data.name}</list> 
- <list class="etiqueta">Defensa ${data.info.defense}</list>
- <list class="etiqueta">Magia ${data.info.magic}</list>
- <list class="etiqueta">Dificultad ${data.info.difficulty}</list>
- </div> 
-`;
-   championsCard += list;
-   
- });
- containerCards.innerHTML = championsCard;
-};
-
-functionChampions(arrKeys);
-
-const mostrarNombre = () => {
   let championsCard = '';
-  let prueba2 = lol.buscarNombre(arrKeys, inputSearch.value);
-  alert("hola");
-   for (let i = 0; i<prueba2.length;i++){    
-    let list = `
-    <div class ="card-name">  
-    <img class="image" src="${prueba2[i].img}"/>
-    <list class="etiqueta">${prueba2[i].name}</list> 
-    <list class="etiqueta">Defensa ${prueba2[i].defense}</list>
-    <list class="etiqueta">Magia ${prueba2[i].magic}</list>
-    <list class="etiqueta">Dificultad ${prueba2[i].difficulty}</list>
-    </div> 
-   `;
-   championsCard += list;
-    }
+  let championsModal = '';
+  championsData.forEach((data) => {
+    const listChampionCard = `
+  <a class ='champion-card' href='#champions-modal'>
+  <input type='image' src='${data.img}'/>
+  <h1>${data.name}</h1> 
+  </a>`;
 
-   containerCards.innerHTML = championsCard;
-}
+    const listChampionModal = `
+  <div class = 'champion-modal'>
+    <img class='modal-splash' src='${data.splash}'/>
+    <section class = 'champion-info'
+    <h1>${data.name}</h1> 
+    <h3> ${data.title}</h3>
+    <p> Ataque</p> <progress value='${data.info.attack}'max='10'></progress>
+    <p>Defensa ${data.info.defense}</p>
+    <p>Magia ${data.info.magic}</p>
+    <p>Dificultad ${data.info.difficulty}</p>
+    <p> Vida  ${data.stats.hp}</p>
+    <p>Nivel:</p>
+    <section> 
+    <form>
+        <select> 
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>      
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>      
+            <option value="18">18</option>
+          </select>
+     </form>
+     </section>
+    </section>    
+    <a href="#" title="Close" class="modal-close">Close</a>
+    </div>`;
 
+    championsCard += listChampionCard;
+    championsModal += listChampionModal;
+
+    containerCards.innerHTML = championsCard;
+    containerModalsCards.innerHTML = championsModal;
+
+    let collectionModal = document.querySelectorAll('.champion-modal');
+    let arrModal = Array.from(collectionModal);
+
+    let collectionCard = document.querySelectorAll('.champion-card');
+    let arrCard = Array.from(collectionCard);
+
+    arrCard.forEach((modal, index) => {
+      modal.addEventListener('click', myFunction);              
+      function myFunction() {
+        arrModal[index].style.display = 'block';
+      }
+    });
+  });
+  return championsData;
+};
+functionChampions(arrKeys);

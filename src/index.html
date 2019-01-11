@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>League Of Legends Championship</title>
@@ -8,92 +9,104 @@
   <meta name="viewport" content="width= device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <link rel="shortcut icon" type="image/png" href="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/12/League_of_Legends_Icon.png/revision/latest?cb=20150402234343" />
 </head>
+
 <body>
   <!-- Lista de la primera pantalla -->
   <header>
-    <div id="container" class="container">
+    <div class="container">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a href="">HOME</a>
+          <a class= "button-text" href="">HOME</a>
+        </li>
+
+        <li class="nav-item">
+          <a class= "button-text" href="">CAMPEONES</a>
         </li>
         <li class="nav-item">
-          <a href="">ROLES</a>
-        </li>
-        <li class="nav-item">
-          <a href="">LISTA DE TODOS LOS CAMPEONES</a>
-        </li>
-        <li class="nav-item">
-          <a href="">NOTICIAS</a>
+          <a class= "button-text" href="">NOTICIAS</a>
         </li>
       </ul>
     </div>
   </header>
   <section><img class="lol-logo" src="https://www.dafont.com/forum/attach/orig/4/8/48913.png" alt=""></section>
+
   <section>
     <main id="pantalla-inicio">
+
     </main>
   </section>
 
-  <section class="formulario>
+  <section>
     <form class="formulario">
-        <div class="checkbox-container">
-            <input type="checkbox" value="Controller" id="controller" class= "checkbox" >
-            <label for="controller">Controller</label>
-            <input type="checkbox" value="Fighter" id="fighter" class= "checkbox">
-            <label for="fighter">Fighter</label>
-            <input type="checkbox" value="Mage" id="mage" class= "checkbox">
-            <label for="mage">Mage</label>
-            <input type="checkbox" value="Marksman" id="marksman"class= "checkbox">
-            <label for="marksman">Marksman</label>
-            <input type="checkbox" value="Slayer" id="slayer"class= "checkbox">
-            <label for="slayer">Slayer</label>
-            <input type="checkbox" value="Tank" id="tank" class= "checkbox">
-            <label for="tank">Tank</label>
-    
-            <input type="search" id="input-search" placeholder="Buscar aqui" onchange="mostrarNombre()">
-            <!-- <button type="button" id="buscar"></button>             -->
-          </div>
-        </form>
-        <hr>
-      </section>
-      <section id='container-cards' class="container-cards">
-            <aqui va mi lista de elementos de todos los campeones>
-      </section>
-      <section id='card-name' class='card-name'></section>
-        <div id="champions-modal-container" class="champions-modal-container">
-            <form>
-              <section>
-               <p>Nivel:</p>
-               <select> 
-                   <option value="1" selected>1</option>
-                   <option value="2">2</option>
-                   <option value="3">3</option>
-                   <option value="4">4</option>
-                   <option value="5">5</option>
-                   <option value="6">6</option>
-                   <option value="7">7</option>
-                   <option value="8">8</option>
-                   <option value="9">9</option>
-                   <option value="10">10</option>
-                   <option value="11">11</option>
-                   <option value="12">12</option>
-                   <option value="13">13</option>      
-                   <option value="14">14</option>
-                   <option value="15">15</option>
-                   <option value="16">16</option>
-                   <option value="17">17</option>      
-                   <option value="18">18</option>
-                 </select>
-               </section>  
-            </form>
-           </div>
-          
+      <div class="checkbox-container">
+        <input type="checkbox" value="Support" id="support" class= "checkbox" >
+        <label for="support">Support</label>
 
-         <script src="./data/lol/lol.js"></script>
-         <script src="data.js"></script>
-         <script src="main.js"></script>
-       
-       
-       </body>
-       
-       </html>                
+        <input type="checkbox" value="Fighter" id="fighter" class= "checkbox">
+        <label for="fighter">Fighter</label>
+
+        <input type="checkbox" value="Mage" id="mage" class= "checkbox">
+        <label for="mage">Mage</label>
+
+        <input type="checkbox" value="Marksman" id="marksman" class= "checkbox">
+        <label for="marksman">Marksman</label>
+
+        <input type="checkbox" value="Assasin" id="assasin" class= "checkbox">
+        <label for="assasin">Assasin</label>
+
+        <input type="checkbox" value="Tank" id="tank" class= "checkbox">
+        <label for="tank">Tank</label>
+
+        <input type="search" id="input-search" placeholder="Buscar aqui">
+          <section>
+            <h9>Ordenar:</h9>
+            <select id= "order-data">
+              <option id="ascendant" value="ascendant">A-Z</option>
+              <option id= "descendant" value="descendant">Z-A</option>
+            </select>
+          </section>
+      </div>
+    </form>
+  </section>
+  <div id="champions-list">
+    <section id="champions-cards-group" class="champions-card-group">
+      <!--   aqui va mi lista de elementos de todos los campeones -->
+    </section>
+    <div id="champions-modal-container" class="champions-modal-container">
+        <input type="search" id="input-search" placeholder="Escribir Nombre" onchange="escribriNombre()">
+        <input type="search" id="input-search" placeholder="Mostrar mi salud" onchange="mostrarSalud()">
+     <form>
+       <section>
+        <p>Nivel:</p>
+        <select> 
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>      
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>      
+            <option value="18">18</option>
+          </select>
+        </section>  
+     </form>
+    </div>
+   </div>
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>

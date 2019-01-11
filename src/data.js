@@ -1,26 +1,55 @@
-const mostrarArray = (data)=>{
-  let arrayMostrado = [];
-  for(let i = 0; i < data.length ; i++){
-    arrayMostrado.push({name: data[i].name, img: data[i].img, defense: data[i].info.defense, magic: data[i].info.magic, difficulty: data[i].info.difficulty});
-  }
-  return arrayMostrado;
-}
+const originalArrKeysData = Object.assign({}, LOL);
+const arrKeysData = Object.values(originalArrKeysData);
 
-const buscarNombre = (data, nombre) => {
-  let x = [];
-    for(let i = 0 ; i < data.length ; i++){
-      if(data[i].name === nombre){
-        x.push({img: data[i].img, name: data[i].name, defense: data[i].info.defense, magic: data[i].info.magic, difficulty: data[i].info.difficulty});
+/* global functionChampions : true */
+
+
+const checkbox = Object.values(document.getElementsByClassName('checkbox'));
+
+let selectedTags = [];
+
+let functionFilter = (() => {
+  checkbox.forEach((tag) => {
+    tag.addEventListener('change', () => {
+      if (event.target.checked) {
+        selectedTags.push(tag.value);
+      } else {
+        let io = selectedTags.indexOf(tag.value);
+        selectedTags.splice(io, 1);
+        functionChampions(arrKeysData);
       }
-    }
-    return x;
-  }
 
-
-
-
+      const arrKeysFilter = arrKeysData.filter(data => {
+        const trueAndFalseArray = [];
+        selectedTags.forEach(choice => {
+          if (data.tags.includes(choice)) {
+            trueAndFalseArray.push(true);
+          } else {
+            trueAndFalseArray.push(false);
+          }
+        });
+        if (trueAndFalseArray.includes(false)) {
+          return false;
+        } else {
+          return data;
+        }
+      });
+      functionChampions(arrKeysFilter);
+    });
+  });
+});
+/* 
+const dataCopy = Object.assign({}, LOL.data);
+const arrayCopy = Object.values(dataCopy);
+const dataFilter = (data, condition) => {
+  return data.filter((eleTags) => {
+    return eleTags.tags.includes(condition) === true;
+  });
+};
+dataFilter(arrayCopy, 'Mage').forEach((ele) => {
+  console.log('result = ' + ele.id);
+}); */
 
 window.lol = {
-  mostrarArray,
-  buscarNombre,
+  functionFilter,
 };
