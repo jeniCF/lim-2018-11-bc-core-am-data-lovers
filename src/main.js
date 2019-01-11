@@ -114,7 +114,7 @@ orderLol.addEventListener('change', () => {
 });
  
 
-const minMax = document.getElementById('min-max');
+/* const minMax = document.getElementById('min-max');
 
 
 let hpselect = document.getElementById('hp-select');
@@ -139,5 +139,5 @@ select.addEventListener('change', () =>{
   return minMaxvar
 });
 };
-functionMaxMin(arrKeys, hpselect);
+functionMaxMin(arrKeys, hpselect); */
     
