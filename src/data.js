@@ -1,60 +1,52 @@
 
 
-const originalArrKeysData = Object.assign({}, window.LOL);
-const arrKeysData = Object.values(originalArrKeysData.data);
+let filterChampions = ((data, arrValuesCheck) => {
+  const functionFilter = data.filter(arrElement => {
+    let booleanArray = [];
 
-/* global functionChampions : true */
-
-
-const checkbox = Object.values(document.getElementsByClassName('checkbox'));
-
-let selectedTags = [];
-
-let functionFilter = ((ele) => {
-  ele.forEach((tag) => {
-    tag.addEventListener('change', () => {
-      if (event.target.checked) {
-        selectedTags.push(tag.value);
+    arrValuesCheck.forEach(value => {
+      if (arrElement.tags.includes(value)) {
+        booleanArray.push(true);
       } else {
-        let io = selectedTags.indexOf(tag.value);
-        selectedTags.splice(io, 1);
-        functionChampions(arrKeysData);
+        booleanArray.push(false);
       }
-
-      const arrKeysFilter = arrKeysData.filter(data => {
-        const trueAndFalseArray = [];
-        selectedTags.forEach(choice => {
-          if (data.tags.includes(choice)) {
-            trueAndFalseArray.push(true);
-          } else {
-            trueAndFalseArray.push(false);
-          }
-        });
-        if (trueAndFalseArray.includes(false)) {
-          return false;
-        } else {
-          return data;
-        }
-      });
-      functionChampions(arrKeysFilter);
     });
+
+    if (booleanArray.includes(false)) {
+      return false;
+    } else {
+      return arrElement;
+    }
   });
+  return functionFilter;
 });
-functionFilter(checkbox);
-/* 
-const dataCopy = Object.assign({}, LOL.data);
-const arrayCopy = Object.values(dataCopy);
 
+const sortFunction = (data, select) => {
+  let arrayData = [];
+  
 
-const dataFilter = (data, condition) => {
-  return data.filter((eleTags) => {
-    return eleTags.tags.includes(condition) === true;
+  data.forEach((ele) => {
+    arrayData.push(ele);
+    arrayData.sort((valor1, valor2) => {
+      if (valor1.name > valor2.name) {
+        return 1;
+      }
+      if (valor1.name < valor2.name) {
+        return -1;
+      }
+      return 0;
+    });
+
+    if (select === true) {
+      return arrayData;
+    } else {
+      return arrayData.reverse();
+    }
   });
+  return arrayData;
 };
-dataFilter(arrayCopy, 'Mage').forEach((ele) => {
-  console.log('result = ' + ele.id);
-}); */
 
 window.lol = {
-  functionFilter,
+  filterChampions,
+  sortFunction,
 };

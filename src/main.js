@@ -5,9 +5,18 @@ const originalArrKeys = Object.assign({}, window.LOL);
 const arrKeys = Object.values(originalArrKeys.data);
 
 
+const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
+
+let orderLol = document.getElementById('order-data');
+let ascendant = document.getElementById('ascendant');
+
+
 let functionChampions = (championsData) => {
   let championsCard = '';
   let championsModal = '';
+
+  // console.log('hola =' + championsData);
+  
   championsData.forEach((data) => {
     const listChampionCard = `
   <a class ='champion-card' href='#champions-modal'>
@@ -65,16 +74,70 @@ let functionChampions = (championsData) => {
     let arrModal = Array.from(collectionModal);
 
     let collectionCard = document.querySelectorAll('.champion-card');
+  
     let arrCard = Array.from(collectionCard);
 
     arrCard.forEach((modal, index) => {
-      modal.addEventListener('click', myFunction);              
+      modal.addEventListener('click', myFunction);
+
       function myFunction() {
         arrModal[index].style.display = 'block';
       }
     });
   });
-  return championsData;
+  return championsCard;
 };
 functionChampions(arrKeys);
 
+
+const functionCheckbox = ((check) => {
+  let checkvalues = [];
+
+  check.forEach((tag) => {
+    tag.addEventListener('change', () => {
+      if (event.target.checked === true) {
+        checkvalues.push(tag.value);
+      } else {
+        let ck = checkvalues.indexOf(tag.value);
+        checkvalues.splice(ck, 1);
+        functionChampions(arrKeys);
+      }
+      functionChampions(window.lol.filterChampions(arrKeys, checkvalues));
+    });
+  });
+});
+functionCheckbox(checkboxArray);
+
+
+orderLol.addEventListener('change', () => {
+  functionChampions(window.lol.sortFunction(arrKeys, ascendant.selected));
+});
+ 
+
+/* const minMax = document.getElementById('min-max');
+
+
+let hpselect = document.getElementById('hp-select');
+console.log(hpselect.value);
+
+functionMaxMin = (data,select) =>{  
+  let minMaxvar = '';
+select.addEventListener('change', () =>{
+  let maxreal= select.value;
+  console.log(maxreal);
+
+  data.forEach((ele) => {
+  let max = ele.stats.hp + maxreal*ele.stats.hpperlevel;
+  let hpList = `
+  <p>
+  <span> Salud de ${ele.name}: ${ele.stats.hp}(min) - ${max} </span>
+</p>
+  `;
+  minMaxvar += hpList;
+  minMax.innerHTML = minMaxvar;
+  });
+  return minMaxvar
+});
+};
+functionMaxMin(arrKeys, hpselect); */
+    
