@@ -44,32 +44,35 @@ let filterChampions = ((data, arrValuesCheck) => {
       }
     });
     return arrayData;
-  };
-  
-  /* Funcion cálculo stats
-   */
-  let functionMaxMin = (ele, select, index, stats) => {  
-    if (stats === 1) {
-      let hpCalc = ele[index].stats.hp + select * ele[index].stats.hpperlevel;  
-      return hpCalc.toFixed(2);
-    }
-  
-    if (stats === 2) {
-      let mpCalc = ele[index].stats.mp + select * ele[index].stats.mpperlevel;  
-      return mpCalc.toFixed(2);
-    }
-  
-    if (stats === 3) {
-      let armorCalc = ele[index].stats.armor + select * ele[index].stats.armorperlevel;  
-      return armorCalc.toFixed(2);
-    }
-    else {
-      return 'No se encontraron datos';
-    }
-  };
-  
-  window.lol = {
-    filterChampions,
-    sortFunction,
-    functionMaxMin,
-  };
+};
+
+/* Funcion cálculo stats
+ */
+let functionMaxMin = (ele, select, index, stats) => {  
+  if (stats === 1) {
+    let hpCalc = ele[index].stats.hp + select * ele[index].stats.hpperlevel;  
+    return hpCalc.toFixed(2);
+  }
+
+  if (stats === 2) {
+    let mpCalc = ele[index].stats.mp + select * ele[index].stats.mpperlevel;  
+    return mpCalc.toFixed(2);
+  }
+
+  if (stats === 3) {
+    let armorCalc = ele[index].stats.armor + select * ele[index].stats.armorperlevel;  
+    return armorCalc.toFixed(2);
+  } 
+
+  if (stats === 4) {
+    let attackDaCalc = ele[index].stats.attackdamage + select * ele[index].stats.attackdamageperlevel;  
+    return attackDaCalc.toFixed(2);
+  } 
+};
+
+window.lol = {
+  filterChampions,
+  sortFunction,
+  functionMaxMin,
+};
+
