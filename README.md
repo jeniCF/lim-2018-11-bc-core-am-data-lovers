@@ -28,6 +28,7 @@ League of Legends es un juego competitivo en línea de ritmo frenético, que fus
 Diseñamos las preguntas para poder encuestar a nuestros usuarios y saber sus necesidades mediante las diversas preguntas planteadas a usuarios es decir personas que juegan **_League of Legends_** ,en estas encuestas nos ayudaron a conocer lo que deseaba el potencial usuario; durante la entrevista destacaron estos dos elementos: la empatía y la escucha haciendo que ese momento se dé de la forma más amena y fluida posible.
 ![imagen de personas](https://www.beeva.com/wp-content/uploads/2015/04/BEEVA-UX-personas-herramienta.jpg)
 Diseño de la encuesta:
+
 ¿ Cuándo empezaste a jugar League of Legends ?
 ¿ Te llamaba la atención el juego cuando empezaste ?
 ¿ Quién fue la persona que te recomendo el juego ?
@@ -74,15 +75,15 @@ POR COMPLETAR
 Diseñamos cuatro historias útiles y necesarias para que el jugador inicie el juego de la forma más cómoda posible:
 
 * **Primera historia**
-_Visualizar los datos de los campeones: Como imágenes,nombre,magia,ataque y defensa para poder comprar un nuevo Campeón._
+_Yo como usuario deseo ver el nombre, ataque,defensa,magia y dificultad de los campeones para elegir e mejor campeón._
 * **Segunda historia**
-_El usuario podrá conocer a cada campeón en específico con sus respectivas características._
+_Yo como usuario deseo ver a los campeones por rol para conocerlos personajes que son luchadores._
 
 * **Tercera historia**
-_Mostrar los roles por campeón y al mismo tiempo la cantidad total de campeones por rol._
+_Yo como usuario deseo ordenar alfabeticamentelos campeones._
 
 * **Cuarta historia**
-_ ._
+_Yo como usuario deseo saber el máximo y mínimo de la estadística salud de cada campeón._
 ## Diseño de la interfaz de usuario
 
 ### **a) Prototipo de baja fidelidad**
