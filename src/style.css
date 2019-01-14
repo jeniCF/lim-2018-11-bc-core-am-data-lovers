@@ -411,7 +411,6 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: -10%;
   margin-left: 10%;
   margin-top: 9%;
-  
 }
 
 progress{
@@ -422,10 +421,10 @@ progress{
   appearance: none;
 }
 
-progress::-webkit-progress-value {
-  background:  #D09A2D;
-}
+.hp-number, .mp-number, .armor-number, .attackdamage-number{
+  
 
+}
 .video {
   width: 880px;
   height: 480px;
