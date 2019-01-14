@@ -1,3 +1,25 @@
+let championPage = document.getElementById('champions-page');
+championPage.style.display = 'none';
+
+let homePage = document.getElementById('home-page');
+let homePageButton = document.getElementById('home-page-button');
+let championPageButton = document.getElementById('champion-page-button');
+
+championPageButton.addEventListener('click', function() {
+  event.preventDefault();
+  championPage.style.display = 'block';
+  homePage.style.display = 'none';
+  document.body.style.backgroundImage = "url('https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg')";
+});
+
+homePageButton.addEventListener('click', function() {
+  event.preventDefault();
+  homePage.style.display = 'block';
+  championPage.style.display = 'none';
+  document.body.style.background = '#000A0A';
+
+});
+
 let containerCards = document.getElementById('champions-cards-group');
 let containerModalsCards = document.getElementById('champions-modal-container');
 
@@ -79,18 +101,15 @@ let functionChampions = (championsData) => {
     let close = Array.from(closeSpan);
 
     arrCard.forEach((modal, index) => {
-      modal.addEventListener('click', myFunction);
-
-      function myFunction() {
+      modal.addEventListener('click', function() {
         arrModal[index].style.display = 'block';
-      }
+      });
     });
 
     close.forEach((close, index) => {
-      close.addEventListener('click', myFunction);
-      function myFunction() {
+      close.addEventListener('click', function() {
         arrModal[index].style.display = 'none';
-      }
+      });
     });
 });
   return championsCard;

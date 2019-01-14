@@ -12,16 +12,17 @@
 </head>
 
 <body>
+  
   <!-- Lista de la primera pantalla -->
   <header>
     <div class="headerButton-container">
       <ul class="ul-column">
         <li class="nav-item">
-          <a class="button-text" href="">HOME</a>
+          <a id = 'home-page-button' class="button-text" href="">HOME</a>
         </li>
 
         <li class="nav-item">
-          <a class="button-text" href="">CAMPEONES</a>
+          <a class="button-text" id= 'champion-page-button'href="">CAMPEONES</a>
         </li>
     
       </ul>
@@ -29,17 +30,18 @@
 
     <section class = 'logo-container'>
       <img class="lol-logo" src="https://i.imgur.com/nmrvpiz.png" alt="">
+      <h1 class='header-text'> Championship </h1>
     </section>
-
   </header>
   
   <section>
-    <main id="pantalla-inicio">
-
+    <main id="home-page">
+    <p class= 'home-text'>¡Entérate de los últimos datos de los campeones  que te ayudarán ser el mejor jugador de League of Legends! </p>
+    <img class= 'nidalee' src= 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg'>
     </main>
   </section>
 
-  <section class='champions-page'>
+  <section class='champions-page' id= 'champions-page'>
     
       <form class="formulario">
           <input type="checkbox" value="Support" id="support" class="checkbox">
