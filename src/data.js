@@ -63,6 +63,11 @@ let functionMaxMin = (ele, select, index, stats) => {
     let armorCalc = ele[index].stats.armor + select * ele[index].stats.armorperlevel;  
     return armorCalc.toFixed(2);
   } 
+
+  if (stats === 4) {
+    let attackDaCalc = ele[index].stats.attackdamage + select * ele[index].stats.attackdamageperlevel;  
+    return attackDaCalc.toFixed(2);
+  } 
 };
 
 window.lol = {

@@ -64,7 +64,7 @@ let functionChampions = (championsData) => {
     <p class= 'hp-number'> Salud: ${data.stats.hp}</p>
     <p class= 'mp-number'> Penetración mágica: ${data.stats.mp}</p>
     <p class= 'armor-number'> Armadura: ${data.stats.armor}</p>
-
+    <p class= 'attackdamage-number'> Daño de ataque: ${data.stats.attackdamage}</p>
     </div>
 
     <div class= 'select-hp-stats'>
@@ -161,12 +161,13 @@ let hpSelect = Array.from(Object.values(document.getElementsByClassName('hp-sele
 let hpContainer = Array.from(Object.values(document.getElementsByClassName('hp-number')));
 let mpContainer = Array.from(Object.values(document.getElementsByClassName('mp-number')));
 let armorContainer = Array.from(Object.values(document.getElementsByClassName('armor-number')));
-
+let attackDamageContainer = Array.from(Object.values(document.getElementsByClassName('attackdamage-number')));
 
 hpSelect.forEach((ele, index) => {
   ele.addEventListener('change', () => {
     hpContainer[index].innerHTML = 'Salud: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 1);
     mpContainer[index].innerHTML = 'Penetración mágica: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 2);
     armorContainer[index].innerHTML = 'Armadura: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 3);
+    attackDamageContainer[index].innerHTML = 'Daño de Ataque: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 4);
   });
 });

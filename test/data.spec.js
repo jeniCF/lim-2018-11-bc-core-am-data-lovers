@@ -782,6 +782,9 @@ const outputStatsMp = '195.60';
 
 const outputStatsArmor = '31.98';
 
+const outputStatsAttackDam = '66.78';
+
+
 describe('lol', () => {
   it('Debería ser un objeto', () => {
     expect(typeof lol).toBe('object');
@@ -826,5 +829,9 @@ describe('lol.functionMaxMin', () => {
 
   it('debería retornar 31.98', () => {
     expect(window.lol.functionMaxMin(inputStats, 2, 0, 3)).toEqual(outputStatsArmor);
+  });
+
+  it('debería retornar 66.78', () => {
+    expect(window.lol.functionMaxMin(inputStats, 2, 0, 4)).toEqual(outputStatsAttackDam);
   });
 });
