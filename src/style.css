@@ -402,51 +402,50 @@ body {
   }
   
   .attack, .defense, .magic, .difficulty{
-    font-family: Cormorant Garamond;
-    font-style: italic;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 16px;
-    color: #F2994A;
-    margin-bottom: -10%;
-    margin-left: 10%;
-    margin-top: 9%;
-    
-  }
-  
-  progress{
-    margin-bottom: -10%;
-    width: 55%; 
-    height: 12px;
-    margin-left: 10%;
-    appearance: none;
-  }
-  
-  progress::-webkit-progress-value {
-    background:  #D09A2D;
-  }
-  
-  .video {
-    width: 880px;
-    height: 480px;
-  }
-  footer{
-  font-family: Jacques Francois;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-weight: bold;
   line-height: normal;
-  font-size: 18px;
-  text-align: center;
-  color: #F2F2F2;
-  border-top: 4px solid rgba(208, 154, 45, 0.77);
-  margin: 40px 0px;
+  font-size: 16px;
+  color: #F2994A;
+  margin-bottom: -10%;
+  margin-left: 10%;
+  margin-top: 9%;
+}
+
+progress{
+  margin-bottom: -10%;
+  width: 55%; 
+  height: 12px;
+  margin-left: 10%;
+  appearance: none;
+}
+
+.hp-number, .mp-number, .armor-number, .attackdamage-number{
+  
+
+}
+.video {
+  width: 880px;
+  height: 480px;
+}
+footer{
+font-family: Jacques Francois;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 18px;
+text-align: center;
+color: #F2F2F2;
+border-top: 4px solid rgba(208, 154, 45, 0.77);
+margin: 40px 0px;
+}
+
+@media (max-width: 400px) {
+  .home-text {
+  margin: 10%;
+  font-size: 15px;
+
+
   }
-  
-  @media (max-width: 400px) {
-    .home-text {
-    margin: 10%;
-    font-size: 15px;
-  
-  
-    }
-  }
+}
