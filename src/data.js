@@ -1,11 +1,9 @@
 
-
+/* Funcion filtrado
+ */
 let filterChampions = ((data, arrValuesCheck) => {
-  console.log(arrValuesCheck);
-
   const functionFilter = data.filter(arrElement => {
     let booleanArray = [];
-
     arrValuesCheck.forEach(value => {
       if (arrElement.tags.includes(value)) {
         booleanArray.push(true);
@@ -13,7 +11,6 @@ let filterChampions = ((data, arrValuesCheck) => {
         booleanArray.push(false);
       }
     });
-
     if (booleanArray.includes(false)) {
       return false;
     } else {
@@ -23,6 +20,8 @@ let filterChampions = ((data, arrValuesCheck) => {
   return functionFilter;
 });
 
+/* Funcion ordenado
+ */
 const sortFunction = (data, select) => {
   let arrayData = [];
   
@@ -48,7 +47,16 @@ const sortFunction = (data, select) => {
   return arrayData;
 };
 
+/* Funcion cálculo stats
+ */
+let functionMaxMin = (ele, select, index) => {  
+ case 1
+  let hpCalc = ele[index].stats.hp + select * ele[index].stats.hpperlevel;  
+  return hpCalc;
+};
+
 window.lol = {
   filterChampions,
   sortFunction,
+  functionMaxMin,
 };

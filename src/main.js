@@ -5,14 +5,14 @@ let homePage = document.getElementById('home-page');
 let homePageButton = document.getElementById('home-page-button');
 let championPageButton = document.getElementById('champion-page-button');
 
-championPageButton.addEventListener('click', function () {
+championPageButton.addEventListener('click', function() {
   event.preventDefault();
   championPage.style.display = 'block';
   homePage.style.display = 'none';
-  document.body.style.backgroundImage = "url('https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg')";
+  document.body.style.backgroundImage = 'url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg")';
 });
 
-homePageButton.addEventListener('click', function () {
+homePageButton.addEventListener('click', function() {
   event.preventDefault();
   homePage.style.display = 'block';
   championPage.style.display = 'none';
@@ -24,20 +24,17 @@ let containerCards = document.getElementById('champions-cards-group');
 let containerModalsCards = document.getElementById('champions-modal-container');
 
 const originalArrKeys = Object.assign({}, window.LOL);
-const arrKeys = Object.values(originalArrKeys.data);
-
-
+const arrKeys = Object.values(originalArrKeys.data)
 const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
 
 let orderLol = document.getElementById('order-data');
 let ascendant = document.getElementById('ascendant');
 
-
+/* Funcion de pintado de mi data (Templates)
+ */
 let functionChampions = (championsData) => {
   let championsCard = '';
   let championsModal = '';
-
-  // console.log('hola =' + championsData);
 
   championsData.forEach((data) => {
     const listChampionCard = `
@@ -65,12 +62,13 @@ let functionChampions = (championsData) => {
     </div>
     
     <div class = 'hp-stats'>
-    <p> Vida  ${data.stats.hp}</p>
+    <p class= 'hp-number'> Salud: ${data.stats.hp}</p>
+    <p class= 'mp-number'> Penetración mágica: ${data.stats.mp}</p>
     </div>
 
     <div class= 'select-hp-stats'>
     <form>
-        <select> 
+        <select class= 'hp-select'> 
             <option value='1' selected> Nivel 1</option>
             <option value='2'> Nivel 2</option>
             <option value='3'>Nivel 3</option>
@@ -112,13 +110,13 @@ let functionChampions = (championsData) => {
     let close = Array.from(closeSpan);
 
     arrCard.forEach((modal, index) => {
-      modal.addEventListener('click', function () {
+      modal.addEventListener('click', function() {
         arrModal[index].style.display = 'block';
       });
     });
 
     close.forEach((close, index) => {
-      close.addEventListener('click', function () {
+      close.addEventListener('click', function() {
         arrModal[index].style.display = 'none';
       });
     });
@@ -127,6 +125,9 @@ let functionChampions = (championsData) => {
 };
 functionChampions(arrKeys);
 
+
+/* Funcion filtrado 
+ */
 
 const functionCheckbox = ((check) => {
   let checkvalues = [];
@@ -148,35 +149,22 @@ const functionCheckbox = ((check) => {
 });
 functionCheckbox(checkboxArray);
 
+/* Funcion ordenado */
 
 orderLol.addEventListener('change', () => {
   functionChampions(window.lol.sortFunction(arrKeys, ascendant.selected));
 });
 
 
-/* const minMax = document.getElementById('min-max');
+/* Funcion aritmética */
 
+let hpSelect = Array.from(Object.values(document.getElementsByClassName('hp-select')));
+let hpContainer = Array.from(Object.values(document.getElementsByClassName('hp-number')));
+let mpContainer = Array.from(Object.values(document.getElementsByClassName('mp-number')));
 
-let hpselect = document.getElementById('hp-select');
-console.log(hpselect.value);
-
-functionMaxMin = (data,select) =>{  
-  let minMaxvar = '';
-select.addEventListener('change', () =>{
-  let maxreal= select.value;
-  console.log(maxreal);
-
-  data.forEach((ele) => {
-  let max = ele.stats.hp + maxreal*ele.stats.hpperlevel;
-  let hpList = `
-  <p>
-  <span> Salud de ${ele.name}: ${ele.stats.hp}(min) - ${max} </span>
-</p>
-  `;
-  minMaxvar += hpList;
-  minMax.innerHTML = minMaxvar;
+hpSelect.forEach((ele, index) => {
+  ele.addEventListener('change', () => {
+    hpContainer[index].innerHTML = 'Salud: ' + window.lol.functionMaxMin(arrKeys, ele.value, index);
+    mpContainer[index].innerHTML = 'Penetración mágica: ' + window.lol.functionMaxMin(arrKeys, ele.value, index);
   });
-  return minMaxvar
 });
-};
-functionMaxMin(arrKeys, hpselect); */
