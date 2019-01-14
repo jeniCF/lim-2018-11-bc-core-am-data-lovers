@@ -13,6 +13,7 @@
 
 ***
 ![Alt text](https://www.dafont.com/forum/attach/orig/4/8/48913.png "Title")
+
 ## Definición de producto
 
 Plataforma visual que brinda información básica y dirigida especialmente para **_Diseñadores Graficos_** que conocen el juego pero les interesa la parte visual más que el juego en si, en el juego y requieren conocer lo indispensable para crecer rápidamente, mejorando su estrategia mientras suben de nivel. Podrá conocer el ámbito (zona) de juego, que es ser un invocador, los diferentes tipos de campeones y sus roles.
@@ -29,6 +30,10 @@ League of Legends es un juego competitivo en línea de ritmo frenético, que fus
 Diseñamos las preguntas para poder encuestar a nuestros usuarios y saber sus necesidades mediante las diversas preguntas planteadas a usuarios es decir personas que juegan **_League of Legends_** ,en estas encuestas nos ayudaron a conocer lo que deseaba el potencial usuario; durante la entrevista destacaron estos dos elementos: la empatía y la escucha haciendo que ese momento se dé de la forma más amena y fluida posible.
 
 ![imagen de personas](https://files.merca20.com/uploads/2018/12/videollamada-de-negocios.jpg)
+
+<p align="center">
+ <img src="https://files.merca20.com/uploads/2018/12/videollamada-de-negocios.jpg">
+</p>
 
 Diseño de la encuesta:
 
@@ -66,9 +71,11 @@ Escenarios donde van a actuar: son descripciones de situaciones de uso para que 
 
 ### ¿Quiénes son los principales usuarios de producto?
 Nuestra principal usuaria es una diseñadora gráfica que le interesa y emociona más la parte visual.
-![imagen preguntas](https://drive.google.com/drive/folders/1IoPAkLwNCDTGoXHTEDypxJ7xYEaWw6yw)
 
- **_POR COMPLETAR SEGÚN PERFIL CREADO_** 
+![imagen preguntas](https://i.ibb.co/VTX0DYq/Opera-Instant-nea-2018-12-23-122425-www-facebook-com.png)
+
+
+ SEGÚN PERFIL CREADO 
 
 ### ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 Desean contar con una interfaz que les permita ver a todos los campeones y la foto en tamaño grande y que le permita entender de forma sencilla, agradable cómo funciona el juego.
@@ -80,9 +87,6 @@ Al ser un juego de estrategia y en colaboración con demás jugadores, les inter
 - Para conocer mejor del juego.
 
 ## Historias de usuario
-
-**_PRINT DE PANTALLA_**
-**_PRINT DE PANTALLA DE LA WEB_**
 
 Diseñamos cuatro historias útiles y necesarias para que el jugador inicie el juego de la forma más cómoda posible:
 
@@ -100,8 +104,8 @@ _Yo como usuario deseo saber el máximo y mínimo de la estadística salud de ca
 
 ### **a) Prototipo de baja fidelidad**
 Mostramos el modelo en papel
-![imagen preguntas](https://i.ibb.co/zQFKZyp/Whats-App-Image-2019-01-07-at-7-46-18-AM.jpg)
-![imagen preguntas](https://i.ibb.co/M1cJf7h/Whats-App-Image-2019-01-07-at-7-46-12-AM-1.jpg)
+![imagen preguntas](https://i.ibb.co/mztDzZY/2.jpg)
+![imagen preguntas](https://i.ibb.co/9cxThyM/1.jpg)
 
 Despues del primer testeo de usabilidad encontramos que el primer prototipo fue abrumador para el usuario, ya que este sentia que la página estaba cargada de mucha información que no le facilitaba para el entendimiento del juego. Por lo tanto, decidimos quitar algunos botones y agregar información valiosa para el usuario.
 ### Testeos de usabilidad
@@ -129,4 +133,4 @@ Realizamos la división de tareas en un tablero Kanban. Por cada historia desglo
 ### Trello
 Manejamos los requerimientos en un checklist para ver qué puntos estaban/están terminados y cuáles quedan pendientes. Fue de gran utilidad para llevar un control del proceso de trabajo.
 
-![imagen de personas](https://i.ibb.co/sKb0sv6/trelllo.png)
+![imagen de personas](https://i.ibb.co/gWL7S1S/3.png)
