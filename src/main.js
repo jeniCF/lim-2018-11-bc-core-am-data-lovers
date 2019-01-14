@@ -5,14 +5,14 @@ let homePage = document.getElementById('home-page');
 let homePageButton = document.getElementById('home-page-button');
 let championPageButton = document.getElementById('champion-page-button');
 
-championPageButton.addEventListener('click', function() {
+championPageButton.addEventListener('click', function () {
   event.preventDefault();
   championPage.style.display = 'block';
   homePage.style.display = 'none';
   document.body.style.backgroundImage = "url('https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg')";
 });
 
-homePageButton.addEventListener('click', function() {
+homePageButton.addEventListener('click', function () {
   event.preventDefault();
   homePage.style.display = 'block';
   championPage.style.display = 'none';
@@ -38,7 +38,7 @@ let functionChampions = (championsData) => {
   let championsModal = '';
 
   // console.log('hola =' + championsData);
-  
+
   championsData.forEach((data) => {
     const listChampionCard = `
   <a class ='champion-card' href='#champions-modal'>
@@ -51,35 +51,46 @@ let functionChampions = (championsData) => {
   <span class='close'>&times;</span>
     <img class='modal-splash' src='${data.splash}'/>
     <section class = 'champion-info'>
+    
+    <div class= 'name-title'>
     <h1 class='champion-name-modal'>${data.name}</h1> 
     <h3 class='champion-title-modal'> ${data.title.toUpperCase()}</h3>
+    </div>
+
+    <div class= 'info'>
     <p class='attack'> Ataque</p> <progress class= 'progress-atck' value='${data.info.attack}'max='10'></progress>
     <p class='defense'>Defensa </p> <progress class= 'progress-def' value='${data.info.defense}'max='10'></progress>
     <p class='magic'>Magia </p> <progress class= 'progress-mag' value='${data.info.magic}'max='10'></progress>
-    <p class='difficulty'>Dificultad </p> <progress class= 'progress-atck' value='${data.info.difficulty}'max='10'></progress>
-    <p> Vida  ${data.stats.hp}</p> 
-    <p>Nivel:</p>
+    <p class='difficulty'>Dificultad </p> <progress class= 'progress-diff' value='${data.info.difficulty}'max='10'></progress>
+    </div>
+    
+    <div class = 'hp-stats'>
+    <p> Vida  ${data.stats.hp}</p>
+    </div>
+
+    <div class= 'select-hp-stats'>
     <form>
         <select> 
-            <option value='1' selected>1</option>
-            <option value='2'>2</option>
-            <option value='3'>3</option>
-            <option value='4'>4</option>
-            <option value='5'>5</option>
-            <option value='6'>6</option>
-            <option value='7'>7</option>
-            <option value='8'>8</option>
-            <option value='9'>9</option>
-            <option value='10'>10</option>
-            <option value='11'>11</option>
-            <option value='12'>12</option>
-            <option value='13'>13</option>      
-            <option value='14'>14</option>
-            <option value='15'>15</option>
-            <option value='16'>16</option>
-            <option value='17'>17</option>      
-            <option value='18'>18</option>
+            <option value='1' selected> Nivel 1</option>
+            <option value='2'> Nivel 2</option>
+            <option value='3'>Nivel 3</option>
+            <option value='4'>Nivel 4</option>
+            <option value='5'>Nivel 5</option>
+            <option value='6'>Nivel 6</option>
+            <option value='7'>Nivel 7</option>
+            <option value='8'>Nivel 8</option>
+            <option value='9'>Nivel 9</option>
+            <option value='10'>Nivel 10</option>
+            <option value='11'>Nivel 11</option>
+            <option value='12'>Nivel 12</option>
+            <option value='13'>Nivel 13</option>      
+            <option value='14'>Nivel 14</option>
+            <option value='15'>Nivel 15</option>
+            <option value='16'>Nivel 16</option>
+            <option value='17'>Nivel 17</option>      
+            <option value='18'>Nivel 18</option>
           </select>
+        
      </form>
     </section>    
     </div>`;
@@ -94,24 +105,24 @@ let functionChampions = (championsData) => {
     let arrModal = Array.from(collectionModal);
 
     let collectionCard = document.querySelectorAll('.champion-card');
-  
+
     let arrCard = Array.from(collectionCard);
 
     let closeSpan = document.getElementsByClassName('close');
     let close = Array.from(closeSpan);
 
     arrCard.forEach((modal, index) => {
-      modal.addEventListener('click', function() {
+      modal.addEventListener('click', function () {
         arrModal[index].style.display = 'block';
       });
     });
 
     close.forEach((close, index) => {
-      close.addEventListener('click', function() {
+      close.addEventListener('click', function () {
         arrModal[index].style.display = 'none';
       });
     });
-});
+  });
   return championsCard;
 };
 functionChampions(arrKeys);
@@ -141,7 +152,7 @@ functionCheckbox(checkboxArray);
 orderLol.addEventListener('change', () => {
   functionChampions(window.lol.sortFunction(arrKeys, ascendant.selected));
 });
- 
+
 
 /* const minMax = document.getElementById('min-max');
 
@@ -169,4 +180,3 @@ select.addEventListener('change', () =>{
 });
 };
 functionMaxMin(arrKeys, hpselect); */
-    
