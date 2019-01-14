@@ -1,407 +1,407 @@
 body {
-/*     background-image: url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg");
- */    background-size: cover;
-    background-repeat: no-repeat repeat;
-    background-position: center center;
-    background-color: #000A0A;
-}
-
-header{
-  width: 100%;
-  display: inline-block;
-}
-
-.header-text{
-position: absolute;
-font-family: Enriqueta;
-font-style: normal;
-font-weight: bold;
-line-height: normal;
-font-size: 38px;
-text-align: center;
-color: #AA913E;
-top: 130px;
-left: 41%;
-
-}
-
-.logo-container{
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin-top: 11px;
-  padding-bottom: 19px;
-}
-
-.logo-background{
+  /*     background-image: url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg");
+   */    background-size: cover;
+      background-repeat: no-repeat repeat;
+      background-position: center center;
+      background-color: #000A0A;
+  }
+  
+  header{
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .header-text{
   position: absolute;
-  background: rgba(242, 242, 242, 0.2);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  box-shadow: 0px 4.02797px 4.02797px rgba(0, 0, 0, 0.25);
-  margin-top: 11px;
-  padding-bottom: 19px;
-  width: 100%;
-  height: 80%;
-  display: inline-block;
-  z-index: -1;
-}
-.lol-logo{
-  position: static;
-  height: 100%;
-  padding: 0px;
-  width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-.ul-column{
-display: flex;
-justify-content: space-around;
-list-style-type: none;
-
-}
-.button-text{
-  position: relative;
-  width: 132.17px;
-  height: 50.96px;
-  font-family: Jacques Francois;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 38.2184px;
-  text-shadow: 0px 3.18487px 3.18487px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  color: #F9D971;
-  padding: 10px;
-  border-bottom: 5px solid #392908;
-  padding-bottom: 0px;
-
-}
- 
- li:hover{
-  background-color: #D09A2D;
-  border-radius: 0px;
- }
- li a:hover{
-  color: aliceblue;
- }
-
- .home-page{
-
-  text-align: center;
-
- }
- .home-text{
-  font-family: Cantarell;
+  font-family: Enriqueta;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-  font-size: 25px;
+  font-size: 38px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.77);
-  margin: 40px 180px;
- }
- 
- .nidalee{
-  height: 372px;
-  width: 1336px;
-  object-fit: cover;
-  max-height: 350px;
-  overflow: hidden; 
-  background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg');
-  background-position: top;
-  background-size: cover;
- }
-
- .neeko{
-  background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-reveal-neeko/es_AR/b85d977b38b2c511e838a1b03ba51b581ce4f2af/assets/img/content/neeko/wallpaper/neeko-splash.jpg');
- mix-blend-mode: screen;
- opacity: 0.4;
- filter: blur(25px);
- background-position: top;
- height: 372px;
- width: 1336px;
- object-fit: cover;
- max-height: 350px;
- overflow: hidden; 
- background-position: top;
- background-size: cover;
- margin: 30px 0px;
- }
-
- .banner{
-  width: 1318px;
-  height: 75px;
- 
- }
- .description{
-  position: relative;
-  margin-top: -38px;
-  margin-bottom: -42px;
-  width: 1316.49px;
-  height: 545.47px;
-  padding: 0px;
- }
- .description-img{
-  position:absolute;
-  width: 1316.49px;
-  height: 545.47px;
-  mix-blend-mode: lighten;
-  opacity: 0.2;
-  box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.5);
-  transform: rotate(-0.02deg);
-  object-fit:cover;
-  background-size: cover;
-  background-position: center;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-image: url('https://i.imgur.com/LoO4EBF.jpg');
-  z-index:-1;
- }
-
- .lol-def{
-   top:0;
-   left:0;
-   right:0;
-   bottom:0;
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 36px;
-  color: #7E602A;
-   padding: 50px; 
-}
-
-.p-description{
+  color: #AA913E;
+  top: 130px;
+  left: 41%;
   
+  }
+  
+  .logo-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 11px;
+    padding-bottom: 19px;
+  }
+  
+  .logo-background{
+    position: absolute;
+    background: rgba(242, 242, 242, 0.2);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    box-shadow: 0px 4.02797px 4.02797px rgba(0, 0, 0, 0.25);
+    margin-top: 11px;
+    padding-bottom: 19px;
+    width: 100%;
+    height: 80%;
+    display: inline-block;
+    z-index: -1;
+  }
+  .lol-logo{
+    position: static;
+    height: 100%;
+    padding: 0px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .ul-column{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  
+  }
+  .button-text{
+    position: relative;
+    width: 132.17px;
+    height: 50.96px;
+    font-family: Jacques Francois;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 38.2184px;
+    text-shadow: 0px 3.18487px 3.18487px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #F9D971;
+    padding: 10px;
+    border-bottom: 5px solid #392908;
+    padding-bottom: 0px;
+  
+  }
+   
+   li:hover{
+    background-color: #D09A2D;
+    border-radius: 0px;
+   }
+   li a:hover{
+    color: aliceblue;
+   }
+  
+   .home-page{
+  
+    text-align: center;
+  
+   }
+   .home-text{
+    font-family: Cantarell;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.77);
+    margin: 40px 180px;
+   }
+   
+   .nidalee{
+    height: 372px;
+    width: 1336px;
+    object-fit: cover;
+    max-height: 350px;
+    overflow: hidden; 
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg');
+    background-position: top;
+    background-size: cover;
+   }
+  
+   .neeko{
+    background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-reveal-neeko/es_AR/b85d977b38b2c511e838a1b03ba51b581ce4f2af/assets/img/content/neeko/wallpaper/neeko-splash.jpg');
+   mix-blend-mode: screen;
+   opacity: 0.4;
+   filter: blur(25px);
+   background-position: top;
+   height: 372px;
+   width: 1336px;
+   object-fit: cover;
+   max-height: 350px;
+   overflow: hidden; 
+   background-position: top;
+   background-size: cover;
+   margin: 30px 0px;
+   }
+  
+   .banner{
+    width: 1318px;
+    height: 75px;
+   
+   }
+   .description{
+    position: relative;
+    margin-top: -38px;
+    margin-bottom: -42px;
+    width: 1316.49px;
+    height: 545.47px;
+    padding: 0px;
+   }
+   .description-img{
+    position:absolute;
+    width: 1316.49px;
+    height: 545.47px;
+    mix-blend-mode: lighten;
+    opacity: 0.2;
+    box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.5);
+    transform: rotate(-0.02deg);
+    object-fit:cover;
+    background-size: cover;
+    background-position: center;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: url('https://i.imgur.com/LoO4EBF.jpg');
+    z-index:-1;
+   }
+  
+   .lol-def{
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    color: #7E602A;
+     padding: 50px; 
+  }
+  
+  .p-description{
+    
+    font-family: Bitter;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 43px;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #F2C093;
+    padding: 0px 80px 0px 80px;
+  }
+  .button-register{
+    
+  background: #000000;
+  border: 2px solid rgba(208, 154, 45, 0.77);
+  box-sizing: border-box;
+  text-decoration: none;
   font-family: Bitter;
   font-style: normal;
   font-weight: normal;
-  line-height: 43px;
+  line-height: 140px;
   font-size: 24px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #F2C093;
-  padding: 0px 80px 0px 80px;
-}
-.button-register{
+  color: rgba(208, 154, 45, 0.77);
+  padding: 22px;
+  }
   
-background: #000000;
-border: 2px solid rgba(208, 154, 45, 0.77);
-box-sizing: border-box;
-text-decoration: none;
-font-family: Bitter;
-font-style: normal;
-font-weight: normal;
-line-height: 140px;
-font-size: 24px;
-text-align: center;
-letter-spacing: 0.05em;
-color: rgba(208, 154, 45, 0.77);
-padding: 22px;
-}
-
- label{
-  font-family: Jacques Francois;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 20px;
-  text-align: justify;
-  margin: 15px;
-  color: rgba(255, 255, 254, 0.77);
+   label{
+    font-family: Jacques Francois;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    text-align: justify;
+    margin: 15px;
+    color: rgba(255, 255, 254, 0.77);
+    
+   }
   
- }
-
- .order-data{
-  font-family: Jacques Francois;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 20px;
-  text-align: justify;
-  margin: 15px;
- }
-
-
- .formulario {
-  margin: 10px 15px;
-  background-color: rgba(82, 78, 70, 0.77); 
+   .order-data{
+    font-family: Jacques Francois;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    text-align: justify;
+    margin: 15px;
+   }
+  
+  
+   .formulario {
+    margin: 10px 15px;
+    background-color: rgba(82, 78, 70, 0.77); 
+    text-align: center;
+    background: rgba(82, 78, 70, 0.77); 
+  }
+  
+   .champions-page{
+  /*   background-image: url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg");
+   */  background-size: cover;
+    background-repeat: no-repeat repeat;
+    background-position: center center;
+   }
+  
+  
+   .champions-card-group{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    margin: 0% 5%;
+    /* justify-items: stretch; */
+  }
+  
+  .champion-card{
+  border: 2px ;
   text-align: center;
-  background: rgba(82, 78, 70, 0.77); 
-}
-
- .champions-page{
-/*   background-image: url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg");
- */  background-size: cover;
-  background-repeat: no-repeat repeat;
-  background-position: center center;
- }
-
-
- .champions-card-group{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content: space-around;
-  margin: 0% 5%;
-  /* justify-items: stretch; */
-}
-
-.champion-card{
-border: 2px ;
-text-align: center;
-text-justify: inter-word;
-background-color: black;
-text-decoration: none; /*eliminar las lineas de los href*/
-padding: 10px 10px;
-/* display: inline-block; */
-max-width: 100%;
-width: 111px;
-height: 160px;
-vertical-align: top; /*colocaar las cards en top*/
-/* flex-basis:0; */
-border: 2px solid rgba(208, 154, 45, 0.77);
-margin: 8px;
-overflow: hidden;
-
-}
-.champion-name-card{
-font-family: Cormorant Garamond;
-font-style: italic;
-font-weight: bold;
-line-height: normal;
-font-size: 25px;
-text-align: center;
-color: #FFFFFF;
-}
-
-.card-image{
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
+  text-justify: inter-word;
+  background-color: black;
+  text-decoration: none; /*eliminar las lineas de los href*/
+  padding: 10px 10px;
+  /* display: inline-block; */
+  max-width: 100%;
+  width: 111px;
+  height: 160px;
+  vertical-align: top; /*colocaar las cards en top*/
+  /* flex-basis:0; */
+  border: 2px solid rgba(208, 154, 45, 0.77);
+  margin: 8px;
+  overflow: hidden;
   
-}
-.champion-modal {
-  
-  display: none; /* Oculto por defecto */
-  position: fixed; /* Fijo */
-  z-index: 1; /* Siempre al frente */
-  padding-top: 5rem; /* Location of the box */
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */  
-  
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-.champion-modal {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.champion-info{
-  display: flex;
-  position: absolute;
-  color: white;
-  background-color: rgba(0,0,0,0.9);
-  outline: 3px solid #514214;
-  outline-offset: -15px;
-  width: 750px;
-  height: 175px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
-
-.modal-splash {
-  margin: auto;
-  display: block;
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-}
-
-.name-title{
-  background-color: yellow;
-  width: 40%;
-}
-
-.info{
-  background-color: red;
-  width: 26%;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.hp-stats{
-  background-color: blue;
-  width: 15%;
-}
-
-.select-hp-stats{
-  background-color: green;
-  width: 17%;
-}
-
-.champion-name-modal{
-font-family: Lora;
-font-style: normal;
-font-weight: bold;
-line-height: normal;
-font-size: 38px;
-color: #F2F2F2;
-margin-left: 39px;
-margin-bottom: 10px;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.champion-title-modal{
+  }
+  .champion-name-card{
   font-family: Cormorant Garamond;
   font-style: italic;
   font-weight: bold;
   line-height: normal;
-  font-size: 22px;
+  font-size: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  }
+  
+  .card-image{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    
+  }
+  .champion-modal {
+    
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo */
+    z-index: 1; /* Siempre al frente */
+    padding-top: 5rem; /* Location of the box */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */  
+    
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .champion-modal {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .champion-info{
+    display: flex;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0.9);
+    outline: 3px solid #514214;
+    outline-offset: -15px;
+    width: 750px;
+    height: 175px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+  }
+  
+  .modal-splash {
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .name-title{
+    background-color: yellow;
+    width: 40%;
+  }
+  
+  .info{
+    background-color: red;
+    width: 26%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .hp-stats{
+    background-color: blue;
+    width: 15%;
+  }
+  
+  .select-hp-stats{
+    background-color: green;
+    width: 17%;
+  }
+  
+  .champion-name-modal{
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 38px;
   color: #F2F2F2;
   margin-left: 39px;
-}
-
-.attack, .defense, .magic, .difficulty{
+  margin-bottom: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .champion-title-modal{
+    font-family: Cormorant Garamond;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    color: #F2F2F2;
+    margin-left: 39px;
+  }
+  
+  .attack, .defense, .magic, .difficulty{
   font-family: Cormorant Garamond;
   font-style: italic;
   font-weight: bold;

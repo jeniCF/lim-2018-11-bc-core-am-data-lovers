@@ -52,7 +52,6 @@ let functionChampions = (championsData) => {
     <h1 class='champion-name-modal'>${data.name}</h1> 
     <h3 class='champion-title-modal'> ${data.title.toUpperCase()}</h3>
     </div>
-
     <div class= 'info'>
     <p class='attack'> Ataque</p> <progress class= 'progress-atck' value='${data.info.attack}'max='10'></progress>
     <p class='defense'>Defensa </p> <progress class= 'progress-def' value='${data.info.defense}'max='10'></progress>
@@ -65,8 +64,8 @@ let functionChampions = (championsData) => {
     <p class= 'mp-number'> Penetración mágica: ${data.stats.mp}</p>
     <p class= 'armor-number'> Armadura: ${data.stats.armor}</p>
     <p class= 'attackdamage-number'> Daño de ataque: ${data.stats.attackdamage}</p>
-    </div>
 
+    </div>
     <div class= 'select-hp-stats'>
     <form>
         <select class= 'hp-select'> 
