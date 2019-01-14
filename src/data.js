@@ -49,10 +49,24 @@ const sortFunction = (data, select) => {
 
 /* Funcion cálculo stats
  */
-let functionMaxMin = (ele, select, index) => {  
- case 1
-  let hpCalc = ele[index].stats.hp + select * ele[index].stats.hpperlevel;  
-  return hpCalc;
+let functionMaxMin = (ele, select, index, stats) => {  
+  if (stats === 1) {
+    let hpCalc = ele[index].stats.hp + select * ele[index].stats.hpperlevel;  
+    return hpCalc.toFixed(2);
+  }
+
+  if (stats === 2) {
+    let mpCalc = ele[index].stats.mp + select * ele[index].stats.mpperlevel;  
+    return mpCalc.toFixed(2);
+  }
+
+  if (stats === 3) {
+    let armorCalc = ele[index].stats.armor + select * ele[index].stats.armorperlevel;  
+    return armorCalc.toFixed(2);
+  }
+  else {
+    return 'No se encontraron datos';
+  }
 };
 
 window.lol = {

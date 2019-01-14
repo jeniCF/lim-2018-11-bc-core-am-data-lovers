@@ -64,6 +64,8 @@ let functionChampions = (championsData) => {
     <div class = 'hp-stats'>
     <p class= 'hp-number'> Salud: ${data.stats.hp}</p>
     <p class= 'mp-number'> Penetración mágica: ${data.stats.mp}</p>
+    <p class= 'armor-number'> Armadura: ${data.stats.armor}</p>
+
     </div>
 
     <div class= 'select-hp-stats'>
@@ -161,10 +163,14 @@ orderLol.addEventListener('change', () => {
 let hpSelect = Array.from(Object.values(document.getElementsByClassName('hp-select')));
 let hpContainer = Array.from(Object.values(document.getElementsByClassName('hp-number')));
 let mpContainer = Array.from(Object.values(document.getElementsByClassName('mp-number')));
+let armorContainer = Array.from(Object.values(document.getElementsByClassName('armor-number')));
+
 
 hpSelect.forEach((ele, index) => {
   ele.addEventListener('change', () => {
-    hpContainer[index].innerHTML = 'Salud: ' + window.lol.functionMaxMin(arrKeys, ele.value, index);
-    mpContainer[index].innerHTML = 'Penetración mágica: ' + window.lol.functionMaxMin(arrKeys, ele.value, index);
+    hpContainer[index].innerHTML = 'Salud: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 1);
+    mpContainer[index].innerHTML = 'Penetración mágica: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 2);
+    mpContainer[index].innerHTML = 'Armadura: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 3);
+
   });
 });
