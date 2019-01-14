@@ -22,12 +22,15 @@ Plataforma visual que brinda información básica y dirigida especialmente para 
 Explicaremos en breve un pequeño resumen de lo que es el juego **_League of Legends_**.
 ¿Qué es League of Legends?
 League of Legends es un juego competitivo en línea de ritmo frenético, que fusiona la velocidad y la intensidad de la estrategia en tiempo real (ETR) con elementos de juegos de rol. Dos equipos de poderosos campeones, cada uno con un diseño y estilo de juegos únicos, compiten cara a cara a través de diversos campos de batalla y modos de juego. Con un plantel de campeones en constante expansión, actualizaciones frecuentes y un emocionante panorama competitivo, League of Legends ofrece posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad.
-![imagen](https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4f/Nidalee_0.jpg/revision/latest/scale-to-width-down/640?cb=20150211233847&path-prefix=es)
+<p align="center"><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4f/Nidalee_0.jpg/revision/latest/scale-to-width-down/640?cb=20150211233847&path-prefix=es
+">
+</p>
 
 ## Entrevistas a usuarios
 
 Diseñamos las preguntas para poder encuestar a nuestros usuarios y saber sus necesidades mediante las diversas preguntas planteadas a usuarios es decir personas que juegan **_League of Legends_** ,en estas encuestas nos ayudaron a conocer lo que deseaba el potencial usuario; durante la entrevista destacaron estos dos elementos: la empatía y la escucha haciendo que ese momento se dé de la forma más amena y fluida posible.
-![imagen de personas](https://i.ytimg.com/vi/ill55H0QL7M/hqdefault.jpg)
+
+![imagen de personas](https://files.merca20.com/uploads/2018/12/videollamada-de-negocios.jpg)
 
 Diseño de la encuesta:
 
@@ -39,10 +42,17 @@ Diseño de la encuesta:
 6. ¿ Qué cambiarias si pudieras en League of Legends ?
 
 
-Despues de entrevistar a tres usuarios nos quedamos con una usuario potencial para poder hacer y resolver sus requerimientos.
+Despues de entrevistar a tres usuarios nos quedamos con una usuario potencial para poder hacer y resolver sus requerimientos
+
+
+
 
 **_PROCESO DE UNA ENTREVISTA_**
-![imagen preguntas](https://static.platzi.com/blog/uploads/2016/04/procesoUX-imagencomplementaria.png)
+
+<p align="center"><img 
+src="https://i.ibb.co/fxyR9Hq/proceso-de-usuario.png
+">
+</p>
 
 Podemos ver claramente en la imagen que la encuestada se sintio libre de explayarse.
 
@@ -97,15 +107,36 @@ _Yo como usuario deseo saber el máximo y mínimo de la estadística salud de ca
 Mostramos el modelo en papel
 ![imagen preguntas](https://i.ibb.co/zQFKZyp/Whats-App-Image-2019-01-07-at-7-46-18-AM.jpg)
 ![imagen preguntas](https://i.ibb.co/M1cJf7h/Whats-App-Image-2019-01-07-at-7-46-12-AM-1.jpg)
+
+Despues del primer testeo de usabilidad encontramos que el primer prototipo fue abrumador para el usuario, ya que este sentia que la página estaba cargada de mucha información que no le facilitaba para el entendimiento del juego. Por lo tanto, decidimos quitar algunos botones y agregar información valiosa para el usuario.
 ### Testeos de usabilidad
+- Despues del cambio el usuario quedo satisfecho con el prototipo
+
 ### **b) Prototipo de alta fidelidad**
-por completar
+
+Mostramos la imagen del Figma
+<p align="center"><img 
+src="https://i.ibb.co/ggWJ7gb/imagen-de-zeplin.png
+">
+</p>
+Adjuntamos el link: https://zpl.io/V1zppJB
+
 ### Testeos de usabilidad
 
 ## Planificación del proyecto
 
 ### Tablero
 Realizamos la división de tareas en un tablero Kanban. Por cada historia desglozamos las actividades en tareas pequeñas para saber cuáles realizar y seguir un orden.
-### Sprints tomados
+
+<p align="center"><img 
+src="https://i.ibb.co/d2QF3mR/Whats-App-Image-2019-01-14-at-1-27-18-PM1.jpg
+">
+</p>
+
 ### Trello
 Manejamos los requerimientos en un checklist para ver qué puntos estaban/están terminados y cuáles quedan pendientes. Fue de gran utilidad para llevar un control del proceso de trabajo.
+
+<p align="center"><img 
+src="https://i.ibb.co/sKb0sv6/trelllo.png
+">
+</p>
