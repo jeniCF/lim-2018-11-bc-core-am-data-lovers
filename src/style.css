@@ -150,7 +150,8 @@ color: #FFFFFF;
   top: 0;
   left: 0;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */  background-color: rgb(0,0,0); /* Fallback color */
+  height: 100%; /* Full height */  
+  
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
@@ -193,14 +194,16 @@ color: #FFFFFF;
   bottom: 25%;
   left:300px;
   color: white;
-  background-color: black;
+  background-color: rgba(0,0,0,0.9);
   outline: 3px solid #514214;
   outline-offset: -15px;
   width: 750px;
   height: 175px;
-  align-items: center;
+  grid-template-columns: 40px 50px auto 50px ;
+  grid-template-rows: 25% 100px auto;
 
 }
+
 .modal-splash {
   margin: auto;
   display: block;
@@ -208,15 +211,37 @@ color: #FFFFFF;
   max-width: 800px;
 }
 .champion-name-modal{
-  font-family: Lora;
+font-family: Lora;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
-font-size: 40px;
+font-size: 38px;
 color: #F2F2F2;
+margin-left: 39px;
+margin-bottom: 10px;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.modal-close{
-  background-color: #002;
+.champion-title-modal{
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 22px;
+  color: #F2F2F2;
+  margin-left: 39px;
+
 }
+
+.attack, .defense, .magic, .difficulty{
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: #F2994A;
+  margin-left: 280px;
+  margin-bottom: 1px;
+  bottom: 300px;
+}
+

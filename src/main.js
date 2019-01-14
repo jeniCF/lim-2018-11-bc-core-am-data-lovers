@@ -30,12 +30,12 @@ let functionChampions = (championsData) => {
     <img class='modal-splash' src='${data.splash}'/>
     <section class = 'champion-info'>
     <h1 class='champion-name-modal'>${data.name}</h1> 
-    <h3> ${data.title}</h3>
-    <p> Ataque</p> <progress value='${data.info.attack}'max='10'></progress>
-    <p>Defensa ${data.info.defense}</p>
-    <p>Magia ${data.info.magic}</p>
-    <p>Dificultad ${data.info.difficulty}</p>
-    <p> Vida  ${data.stats.hp}</p>
+    <h3 class='champion-title-modal'> ${data.title.toUpperCase()}</h3>
+    <p class='attack'> Ataque</p> <progress value='${data.info.attack}'max='10'></progress>
+    <p class='defense'>Defensa </p> <progress value='${data.info.defense}'max='10'></progress>
+    <p class='magic'>Magia </p> <progress value='${data.info.magic}'max='10'></progress>
+    <p class='difficulty'>Dificultad </p> <progress value='${data.info.difficulty}'max='10'></progress>
+    <p> Vida  ${data.stats.hp}</p> 
     <p>Nivel:</p>
     <form>
         <select> 
