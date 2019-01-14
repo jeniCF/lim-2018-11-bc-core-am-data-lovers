@@ -35,7 +35,6 @@ const sortFunction = (data, select) => {
       if (valor1.name < valor2.name) {
         return -1;
       }
-      return 0;
     });
 
     if (select === true) {
@@ -63,10 +62,7 @@ let functionMaxMin = (ele, select, index, stats) => {
   if (stats === 3) {
     let armorCalc = ele[index].stats.armor + select * ele[index].stats.armorperlevel;  
     return armorCalc.toFixed(2);
-  }
-  else {
-    return 'No se encontraron datos';
-  }
+  } 
 };
 
 window.lol = {

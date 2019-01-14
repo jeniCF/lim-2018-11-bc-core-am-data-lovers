@@ -17,14 +17,13 @@ homePageButton.addEventListener('click', function() {
   homePage.style.display = 'block';
   championPage.style.display = 'none';
   document.body.style.background = '#000A0A';
-
 });
 
 let containerCards = document.getElementById('champions-cards-group');
 let containerModalsCards = document.getElementById('champions-modal-container');
 
 const originalArrKeys = Object.assign({}, window.LOL);
-const arrKeys = Object.values(originalArrKeys.data)
+const arrKeys = Object.values(originalArrKeys.data);
 const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
 
 let orderLol = document.getElementById('order-data');
@@ -135,7 +134,6 @@ const functionCheckbox = ((check) => {
   let checkvalues = [];
 
   check.forEach((tag) => {
-
     tag.addEventListener('change', () => {
       if (event.target.checked === true) {
         checkvalues.push(tag.value);
@@ -146,7 +144,6 @@ const functionCheckbox = ((check) => {
       }
       functionChampions(window.lol.filterChampions(arrKeys, checkvalues));
     });
-
   });
 });
 functionCheckbox(checkboxArray);
@@ -170,7 +167,6 @@ hpSelect.forEach((ele, index) => {
   ele.addEventListener('change', () => {
     hpContainer[index].innerHTML = 'Salud: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 1);
     mpContainer[index].innerHTML = 'Penetración mágica: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 2);
-    mpContainer[index].innerHTML = 'Armadura: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 3);
-
+    armorContainer[index].innerHTML = 'Armadura: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 3);
   });
 });
