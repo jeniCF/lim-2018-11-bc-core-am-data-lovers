@@ -1,6 +1,8 @@
 
 
 let filterChampions = ((data, arrValuesCheck) => {
+  console.log(arrValuesCheck);
+
   const functionFilter = data.filter(arrElement => {
     let booleanArray = [];
 

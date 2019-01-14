@@ -543,11 +543,11 @@ describe('lol.sortFunction', () => {
     expect(typeof window.lol.sortFunction).toBe('function');
   });
 
-  it('debería retornar un array de objetos, con el valor de la propiedad tag filtrado por tank y fighter', () => {
+  it('debería retornar un array de objetos ordenado de A-Z', () => {
     expect(window.lol.sortFunction(inputFilter1, inputSort1)).toEqual(outputsort1);
   });
 
-  it('debería retornar un array de objetos, con el valor de la propiedad tag filtrado por tank y fighter', () => {
+  it('debería retornar un array de objetos ordenado de Z-A', () => {
     expect(window.lol.sortFunction(inputFilter1, inputSort2)).toEqual(inputFilter1);
   });
 });

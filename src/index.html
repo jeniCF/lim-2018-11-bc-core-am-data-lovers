@@ -6,78 +6,77 @@
   <title>League Of Legends Championship</title>
   <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="css/fontello.css"> -->
-  <meta name="viewport" content="width= device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+  <meta name="viewport" content="width= device-width, initial-scale=1.0 , maximum-scale=1, minimum-scale=1">
   <link rel="shortcut icon" type="image/png" href="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/12/League_of_Legends_Icon.png/revision/latest?cb=20150402234343" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter%7cCantarell%7cCormorant+Garamond~nriqueta%7cJacques+Francois%7cJacques+Francois+Shadow%7cJosefin+Sans" rel="stylesheet">
 </head>
 
 <body>
   <!-- Lista de la primera pantalla -->
   <header>
-    <div class="container">
-      <ul class="nav flex-column">
+    <div class="headerButton-container">
+      <ul class="ul-column">
         <li class="nav-item">
-          <a class= "button-text" href="">HOME</a>
+          <a class="button-text" href="">HOME</a>
         </li>
 
         <li class="nav-item">
-          <a class= "button-text" href="">CAMPEONES</a>
+          <a class="button-text" href="">CAMPEONES</a>
         </li>
-        <li class="nav-item">
-          <a class= "button-text" href="">NOTICIAS</a>
-        </li>
+    
       </ul>
     </div>
-  </header>
-  <section><img class="lol-logo" src="https://www.dafont.com/forum/attach/orig/4/8/48913.png" alt=""></section>
 
+    <section class = 'logo-container'>
+      <img class="lol-logo" src="https://i.imgur.com/nmrvpiz.png" alt="">
+    </section>
+
+  </header>
+  
   <section>
     <main id="pantalla-inicio">
 
     </main>
   </section>
 
-  <section>
-    <form class="formulario">
-      <div class="checkbox-container">
-        <input type="checkbox" value="Support" id="support" class= "checkbox" >
-        <label for="support">Support</label>
+  <section class='champions-page'>
+    
+      <form class="formulario">
+          <input type="checkbox" value="Support" id="support" class="checkbox">
+          <label for="support">Support</label>
 
-        <input type="checkbox" value="Fighter" id="fighter" class= "checkbox">
-        <label for="fighter">Fighter</label>
+          <input type="checkbox" value="Fighter" id="fighter" class="checkbox">
+          <label for="fighter">Fighter</label>
 
-        <input type="checkbox" value="Mage" id="mage" class= "checkbox">
-        <label for="mage">Mage</label>
+          <input type="checkbox" value="Mage" id="mage" class="checkbox">
+          <label for="mage">Mage</label>
 
-        <input type="checkbox" value="Marksman" id="marksman" class= "checkbox">
-        <label for="marksman">Marksman</label>
+          <input type="checkbox" value="Marksman" id="marksman" class="checkbox">
+          <label for="marksman">Marksman</label>
 
-        <input type="checkbox" value="Assasin" id="assasin" class= "checkbox">
-        <label for="assasin">Assasin</label>
+          <input type="checkbox" value="Assasin" id="assasin" class="checkbox">
+          <label for="assasin">Assasin</label>
 
-        <input type="checkbox" value="Tank" id="tank" class= "checkbox">
-        <label for="tank">Tank</label>
+          <input type="checkbox" value="Tank" id="tank" class="checkbox">
+          <label for="tank">Tank</label>
+          <select id="order-data" class="order-data">
+            <option id="ascendant" value="ascendant">A-Z</option>
+            <option id="descendant" value="descendant">Z-A</option>
+          </select>
+      </form>
 
-        <input type="search" id="input-search" placeholder="Buscar aqui">
-          <section>
-            <h7>Ordenar:</h7>
-            <select id= "order-data">
-              <option id="ascendant" value="ascendant">A-Z</option>
-              <option id= "descendant" value="descendant">Z-A</option>
-            </select>
-          </section>
-      </div>
-    </form>
-  </section>
-  <div id="champions-list">
-    <section id="champions-cards-group" class="champions-card-group">
-      <!--   aqui va mi lista de elementos de todos los campeones -->
-    </section>
-    <div id="champions-modal-container" class="champions-modal-container">
-     <form>
-       <section>
-        <p>Nivel:</p>
-        <select> 
-            <option value="1" selected>1</option>
+    
+      <section id="champions-cards-group" class="champions-card-group">
+        <!--   aqui va mi lista de elementos de todos los campeones -->
+      </section>
+      <div id="champions-modal-container" class="champions-modal">
+        <a href="#" title="Close" class="modal-close">X</a>
+        
+        <form>
+          <p>Salud por nivel:</p>
+          <select id='hp-select'>
+            <option selected>Nivel </option>
+            <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -89,17 +88,17 @@
             <option value="10">10</option>
             <option value="11">11</option>
             <option value="12">12</option>
-            <option value="13">13</option>      
+            <option value="13">13</option>
             <option value="14">14</option>
             <option value="15">15</option>
             <option value="16">16</option>
-            <option value="17">17</option>      
+            <option value="17">17</option>
             <option value="18">18</option>
           </select>
-        </section>  
-     </form>
-    </div>
-   </div>
+        </form>
+      </div>
+  </section>
+
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
