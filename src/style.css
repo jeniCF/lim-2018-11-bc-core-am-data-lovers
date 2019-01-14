@@ -51,6 +51,8 @@ z-index: 200;
 .ul-column{
 display: flex;
 justify-content: space-around;
+list-style-type: none;
+
 }
 .button-text{
   position: relative;
@@ -89,10 +91,31 @@ justify-content: space-around;
   margin: 40px 180px;
  }
  
- .nidalee{
+ .nidalee, .neeko{
   height: 372px;
   width: 1336px;
   object-fit: cover;
+  max-height: 320px;
+  overflow: hidden; 
+ }
+
+ .banner{
+  width: 1318px;
+  height: 75px;
+  left: 61px;
+  top: 962px;
+ }
+ .description-img{
+  width: 1316.49px;
+  height: 599.47px;
+  left: 62px;
+  top: 1006.53px;
+  background-image: url('https://i.imgur.com/LoO4EBF.jpg');
+  mix-blend-mode: lighten;
+  opacity: 0.2;
+  box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.5);
+  transform: rotate(-0.02deg);
+  object-fit:none;
  }
 
  label{
@@ -169,7 +192,10 @@ color: #FFFFFF;
 }
 
 .card-image{
-  width: 80px;  
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  
 }
 .champion-modal {
   
