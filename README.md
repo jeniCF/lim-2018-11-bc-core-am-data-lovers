@@ -22,9 +22,7 @@ Plataforma visual que brinda información básica y dirigida especialmente para 
 Explicaremos en breve un pequeño resumen de lo que es el juego **_League of Legends_**.
 ¿Qué es League of Legends?
 League of Legends es un juego competitivo en línea de ritmo frenético, que fusiona la velocidad y la intensidad de la estrategia en tiempo real (ETR) con elementos de juegos de rol. Dos equipos de poderosos campeones, cada uno con un diseño y estilo de juegos únicos, compiten cara a cara a través de diversos campos de batalla y modos de juego. Con un plantel de campeones en constante expansión, actualizaciones frecuentes y un emocionante panorama competitivo, League of Legends ofrece posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad.
-<p align="center"><img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4f/Nidalee_0.jpg/revision/latest/scale-to-width-down/640?cb=20150211233847&path-prefix=es
-">
-</p>
+![imagen de personas](https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4f/Nidalee_0.jpg/revision/latest/scale-to-width-down/640?cb=20150211233847&path-prefix=es)
 
 ## Entrevistas a usuarios
 
@@ -49,14 +47,11 @@ Despues de entrevistar a tres usuarios nos quedamos con una usuario potencial pa
 
 **_PROCESO DE UNA ENTREVISTA_**
 
-<p align="center"><img 
-src="https://i.ibb.co/fxyR9Hq/proceso-de-usuario.png
-">
-</p>
+![imagen de entrevista](https://i.ibb.co/fxyR9Hq/proceso-de-usuario.png)
 
 Podemos ver claramente en la imagen que la encuestada se sintio libre de explayarse.
 
-Adicionalmente, armamos un [Prototipo](subir imagen bonita) de experiencia de usuario con la finalidad de que los _user stories_ sean aceptables, correctas y entendibles.
+Adicionalmente, armamos un prototipo de experiencia de usuario con la finalidad de que los _user stories_ sean aceptables, correctas y entendibles.
 
 ## Definición del user persona
 
@@ -115,28 +110,23 @@ Despues del primer testeo de usabilidad encontramos que el primer prototipo fue 
 ### **b) Prototipo de alta fidelidad**
 
 Mostramos la imagen del Figma
-<p align="center"><img 
-src="https://i.ibb.co/ggWJ7gb/imagen-de-zeplin.png
-">
-</p>
+![imagen de fidelidad](https://i.ibb.co/ggWJ7gb/imagen-de-zeplin.png)
+
 Adjuntamos el link: https://zpl.io/V1zppJB
 
 ### Testeos de usabilidad
+
+- Despues del testeo de usabilidad concluimos que el usuario quiere botones iterativos el cual le indiquen en que esta.
+- Crear un barra que te permita recorre los 135 campeones
 
 ## Planificación del proyecto
 
 ### Tablero
 Realizamos la división de tareas en un tablero Kanban. Por cada historia desglozamos las actividades en tareas pequeñas para saber cuáles realizar y seguir un orden.
 
-<p align="center"><img 
-src="https://i.ibb.co/d2QF3mR/Whats-App-Image-2019-01-14-at-1-27-18-PM1.jpg
-">
-</p>
+![imagen de personas](https://i.ibb.co/d2QF3mR/Whats-App-Image-2019-01-14-at-1-27-18-PM1.jpg)
 
 ### Trello
 Manejamos los requerimientos en un checklist para ver qué puntos estaban/están terminados y cuáles quedan pendientes. Fue de gran utilidad para llevar un control del proceso de trabajo.
 
-<p align="center"><img 
-src="https://i.ibb.co/sKb0sv6/trelllo.png
-">
-</p>
+![imagen de personas](https://i.ibb.co/sKb0sv6/trelllo.png)
