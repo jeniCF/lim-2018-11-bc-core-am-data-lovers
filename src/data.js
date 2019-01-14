@@ -18,11 +18,13 @@ let filterChampions = ((data, arrValuesCheck) => {
     });
     return functionFilter;
   });
+  
   /* Funcion ordenado
    */
   const sortFunction = (data, select) => {
     let arrayData = [];
     
+  
     data.forEach((ele) => {
       arrayData.push(ele);
       arrayData.sort((valor1, valor2) => {
@@ -34,6 +36,7 @@ let filterChampions = ((data, arrValuesCheck) => {
         }
         return 0;
       });
+  
       if (select === true) {
         return arrayData;
       } else {
@@ -42,9 +45,10 @@ let filterChampions = ((data, arrValuesCheck) => {
     });
     return arrayData;
   };
+  
   /* Funcion cálculo stats
- */
-let functionMaxMin = (ele, select, index, stats) => {  
+   */
+  let functionMaxMin = (ele, select, index, stats) => {  
     if (stats === 1) {
       let hpCalc = ele[index].stats.hp + select * ele[index].stats.hpperlevel;  
       return hpCalc.toFixed(2);

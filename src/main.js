@@ -1,38 +1,48 @@
 let championPage = document.getElementById('champions-page');
 championPage.style.display = 'none';
+
 let homePage = document.getElementById('home-page');
 let homePageButton = document.getElementById('home-page-button');
 let championPageButton = document.getElementById('champion-page-button');
+
 championPageButton.addEventListener('click', function() {
   event.preventDefault();
   championPage.style.display = 'block';
   homePage.style.display = 'none';
   document.body.style.backgroundImage = 'url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg")';
 });
+
 homePageButton.addEventListener('click', function() {
   event.preventDefault();
   homePage.style.display = 'block';
   championPage.style.display = 'none';
   document.body.style.background = '#000A0A';
+
 });
+
 let containerCards = document.getElementById('champions-cards-group');
 let containerModalsCards = document.getElementById('champions-modal-container');
+
 const originalArrKeys = Object.assign({}, window.LOL);
 const arrKeys = Object.values(originalArrKeys.data)
 const checkboxArray = Object.values(document.getElementsByClassName('checkbox'));
+
 let orderLol = document.getElementById('order-data');
 let ascendant = document.getElementById('ascendant');
+
 /* Funcion de pintado de mi data (Templates)
  */
 let functionChampions = (championsData) => {
   let championsCard = '';
   let championsModal = '';
+
   championsData.forEach((data) => {
     const listChampionCard = `
   <a class ='champion-card' href='#champions-modal'>
   <input type='image' class= 'card-image' src='${data.img}'/>
   <h1 class='champion-name-card'>${data.name}</h1> 
   </a>`;
+
     const listChampionModal = `
   <div class = 'champion-modal'>
   <span class='close'>&times;</span>
@@ -81,21 +91,29 @@ let functionChampions = (championsData) => {
      </form>
     </section>    
     </div>`;
+
     championsCard += listChampionCard;
     championsModal += listChampionModal;
+
     containerCards.innerHTML = championsCard;
     containerModalsCards.innerHTML = championsModal;
+
     let collectionModal = document.querySelectorAll('.champion-modal');
     let arrModal = Array.from(collectionModal);
+
     let collectionCard = document.querySelectorAll('.champion-card');
+
     let arrCard = Array.from(collectionCard);
+
     let closeSpan = document.getElementsByClassName('close');
     let close = Array.from(closeSpan);
+
     arrCard.forEach((modal, index) => {
       modal.addEventListener('click', function() {
         arrModal[index].style.display = 'block';
       });
     });
+
     close.forEach((close, index) => {
       close.addEventListener('click', function() {
         arrModal[index].style.display = 'none';
@@ -105,11 +123,16 @@ let functionChampions = (championsData) => {
   return championsCard;
 };
 functionChampions(arrKeys);
+
+
 /* Funcion filtrado 
  */
+
 const functionCheckbox = ((check) => {
   let checkvalues = [];
+
   check.forEach((tag) => {
+
     tag.addEventListener('change', () => {
       if (event.target.checked === true) {
         checkvalues.push(tag.value);
@@ -120,14 +143,20 @@ const functionCheckbox = ((check) => {
       }
       functionChampions(window.lol.filterChampions(arrKeys, checkvalues));
     });
+
   });
 });
 functionCheckbox(checkboxArray);
+
 /* Funcion ordenado */
+
 orderLol.addEventListener('change', () => {
   functionChampions(window.lol.sortFunction(arrKeys, ascendant.selected));
 });
+
+
 /* Funcion aritmética */
+
 let hpSelect = Array.from(Object.values(document.getElementsByClassName('hp-select')));
 let hpContainer = Array.from(Object.values(document.getElementsByClassName('hp-number')));
 let mpContainer = Array.from(Object.values(document.getElementsByClassName('mp-number')));
@@ -141,4 +170,4 @@ hpSelect.forEach((ele, index) => {
     mpContainer[index].innerHTML = 'Armadura: ' + window.lol.functionMaxMin(arrKeys, ele.value, index, 3);
 
   });
-}); 
+});
