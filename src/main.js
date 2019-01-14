@@ -53,10 +53,10 @@ let functionChampions = (championsData) => {
     <section class = 'champion-info'>
     <h1 class='champion-name-modal'>${data.name}</h1> 
     <h3 class='champion-title-modal'> ${data.title.toUpperCase()}</h3>
-    <p class='attack'> Ataque</p> <progress value='${data.info.attack}'max='10'></progress>
-    <p class='defense'>Defensa </p> <progress value='${data.info.defense}'max='10'></progress>
-    <p class='magic'>Magia </p> <progress value='${data.info.magic}'max='10'></progress>
-    <p class='difficulty'>Dificultad </p> <progress value='${data.info.difficulty}'max='10'></progress>
+    <p class='attack'> Ataque</p> <progress class= 'progress-atck' value='${data.info.attack}'max='10'></progress>
+    <p class='defense'>Defensa </p> <progress class= 'progress-def' value='${data.info.defense}'max='10'></progress>
+    <p class='magic'>Magia </p> <progress class= 'progress-mag' value='${data.info.magic}'max='10'></progress>
+    <p class='difficulty'>Dificultad </p> <progress class= 'progress-atck' value='${data.info.difficulty}'max='10'></progress>
     <p> Vida  ${data.stats.hp}</p> 
     <p>Nivel:</p>
     <form>

@@ -12,7 +12,7 @@ header{
 }
 
 .header-text{
-  position: absolute;
+position: absolute;
 font-family: Enriqueta;
 font-style: normal;
 font-weight: bold;
@@ -20,24 +20,32 @@ line-height: normal;
 font-size: 38px;
 text-align: center;
 color: #AA913E;
-top: 100px;
+top: 130px;
 left: 41%;
-z-index: 200;
 
 }
 
 .logo-container{
   position: relative;
-  background: rgba(242, 242, 242, 0.2);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  box-shadow: 0px 4.02797px 4.02797px rgba(0, 0, 0, 0.25);
   display: inline-block;
   width: 100%;
   margin-top: 11px;
   padding-bottom: 19px;
 }
 
+.logo-background{
+  position: absolute;
+  background: rgba(242, 242, 242, 0.2);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  box-shadow: 0px 4.02797px 4.02797px rgba(0, 0, 0, 0.25);
+  margin-top: 11px;
+  padding-bottom: 19px;
+  width: 100%;
+  height: 80%;
+  display: inline-block;
+  z-index: -1;
+}
 .lol-logo{
   position: static;
   height: 100%;
@@ -81,9 +89,7 @@ list-style-type: none;
  }
 
  .home-page{
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+
   text-align: center;
 
  }
@@ -98,32 +104,107 @@ list-style-type: none;
   margin: 40px 180px;
  }
  
- .nidalee, .neeko{
+ .nidalee{
   height: 372px;
   width: 1336px;
   object-fit: cover;
-  max-height: 320px;
+  max-height: 350px;
   overflow: hidden; 
+  background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg');
+  background-position: top;
+  background-size: cover;
+ }
+
+ .neeko{
+  background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-reveal-neeko/es_AR/b85d977b38b2c511e838a1b03ba51b581ce4f2af/assets/img/content/neeko/wallpaper/neeko-splash.jpg');
+ mix-blend-mode: screen;
+ opacity: 0.4;
+ filter: blur(25px);
+ background-position: top;
+ height: 372px;
+ width: 1336px;
+ object-fit: cover;
+ max-height: 350px;
+ overflow: hidden; 
+ background-position: top;
+ background-size: cover;
+ margin: 30px 0px;
  }
 
  .banner{
   width: 1318px;
   height: 75px;
-  left: 61px;
-  top: 962px;
+ 
+ }
+ .description{
+  position: relative;
+  margin-top: -38px;
+  margin-bottom: -42px;
+  width: 1316.49px;
+  height: 545.47px;
+  padding: 0px;
  }
  .description-img{
+  position:absolute;
   width: 1316.49px;
-  height: 599.47px;
-  left: 62px;
-  top: 1006.53px;
-  background-image: url('https://i.imgur.com/LoO4EBF.jpg');
+  height: 545.47px;
   mix-blend-mode: lighten;
   opacity: 0.2;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.5);
   transform: rotate(-0.02deg);
-  object-fit:none;
+  object-fit:cover;
+  background-size: cover;
+  background-position: center;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-image: url('https://i.imgur.com/LoO4EBF.jpg');
+  z-index:-1;
  }
+
+ .lol-def{
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+  color: #7E602A;
+   padding: 50px; 
+}
+
+.p-description{
+  
+  font-family: Bitter;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 43px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #F2C093;
+  padding: 0px 80px 0px 80px;
+}
+.button-register{
+  
+background: #000000;
+border: 2px solid rgba(208, 154, 45, 0.77);
+box-sizing: border-box;
+text-decoration: none;
+font-family: Bitter;
+font-style: normal;
+font-weight: normal;
+line-height: 140px;
+font-size: 24px;
+text-align: center;
+letter-spacing: 0.05em;
+color: rgba(208, 154, 45, 0.77);
+padding: 22px;
+}
 
  label{
   font-family: Jacques Francois;
@@ -161,6 +242,7 @@ list-style-type: none;
   background-repeat: no-repeat repeat;
   background-position: center center;
  }
+
 
  .champions-card-group{
   display:flex;
@@ -293,10 +375,10 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 22px;
   color: #F2F2F2;
   margin-left: 39px;
-
 }
 
 .attack, .defense, .magic, .difficulty{
+  position: absolute;
   font-family: Cormorant Garamond;
   font-style: italic;
   font-weight: bold;
@@ -304,8 +386,13 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 24px;
   color: #F2994A;
   margin-left: 280px;
+  margin-bottom: 100px;
+}
+
+
+.progress-atck, .progress-def, .progress-mag, .progress-dif{
+  margin-left: 280px;
   margin-bottom: 1px;
-  bottom: 300px;
 }
 .video {
   width: 880px;
