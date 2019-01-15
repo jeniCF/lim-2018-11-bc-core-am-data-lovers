@@ -106,7 +106,6 @@ body {
    }
    
    .nidalee{
-    position: relative;
     height: 372px;
     width: 1336px;
     object-fit: cover;
@@ -119,12 +118,13 @@ body {
     object-fit: cover;
     max-height: 350px;
     overflow: hidden; 
-    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg');
+    height: 372px;
+    width: 100%;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg");
     background-position: top;
     background-size: cover;
    }
    .nidalee-text-container{
-    position: absolute;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(208, 154, 45, 0.77);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -133,10 +133,7 @@ body {
     transform: translate(143%, 150%);
    }
 
-   .nidalee-text{
-    position: absolute;
-   }
-
+  
    .nidalee-avalaible{
     
     font-family: Quicksand;
@@ -170,14 +167,16 @@ body {
    }
 
    .neeko-img{
-     position: absolute;
+    filter: blur(20px);
+    position: absolute;
     mix-blend-mode: screen;
     opacity: 0.4;
-    filter: blur(25px);
-    position: absolute;
+    background-position: top;
     object-fit: cover;
-    max-height: 350px;
     overflow: hidden; 
+    height: 400px;
+    width: 100%;
+    background-size: cover;
     background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-reveal-neeko/es_AR/b85d977b38b2c511e838a1b03ba51b581ce4f2af/assets/img/content/neeko/wallpaper/neeko-splash.jpg');
    }
   
