@@ -195,6 +195,7 @@ body {
     width: 1316.49px;
     height: 545.47px;
     padding: 0px;
+    
    }
    .description-img{
     position:absolute;
@@ -237,7 +238,7 @@ body {
     padding: 0px 80px 0px 80px;
   }
   .button-register{
-    
+  position:absolute;
   background: #000000;
   border: 2px solid rgba(208, 154, 45, 0.77);
   box-sizing: border-box;
@@ -245,9 +246,8 @@ body {
   font-family: Bitter;
   font-style: normal;
   font-weight: normal;
-  line-height: 140px;
+  line-height: 30px;
   font-size: 24px;
-  text-align: center;
   letter-spacing: 0.05em;
   color: rgba(208, 154, 45, 0.77);
   padding: 22px;

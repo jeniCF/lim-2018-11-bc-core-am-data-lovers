@@ -69,24 +69,24 @@ let functionChampions = (championsData) => {
     <div class= 'select-hp-stats'>
     <form>
         <select class= 'hp-select'> 
-            <option value='1' selected> Nivel 1</option>
-            <option value='2'> Nivel 2</option>
-            <option value='3'>Nivel 3</option>
-            <option value='4'>Nivel 4</option>
-            <option value='5'>Nivel 5</option>
-            <option value='6'>Nivel 6</option>
-            <option value='7'>Nivel 7</option>
-            <option value='8'>Nivel 8</option>
-            <option value='9'>Nivel 9</option>
-            <option value='10'>Nivel 10</option>
-            <option value='11'>Nivel 11</option>
-            <option value='12'>Nivel 12</option>
-            <option value='13'>Nivel 13</option>      
-            <option value='14'>Nivel 14</option>
-            <option value='15'>Nivel 15</option>
-            <option value='16'>Nivel 16</option>
-            <option value='17'>Nivel 17</option>      
-            <option value='18'>Nivel 18</option>
+            <option value='0' selected> Nivel 1</option>
+            <option value='1'> Nivel 2</option>
+            <option value='2'>Nivel 3</option>
+            <option value='3'>Nivel 4</option>
+            <option value='4'>Nivel 5</option>
+            <option value='5'>Nivel 6</option>
+            <option value='6'>Nivel 7</option>
+            <option value='7'>Nivel 8</option>
+            <option value='8'>Nivel 9</option>
+            <option value='9'>Nivel 10</option>
+            <option value='10'>Nivel 11</option>
+            <option value='11'>Nivel 12</option>
+            <option value='12'>Nivel 13</option>      
+            <option value='13'>Nivel 14</option>
+            <option value='14'>Nivel 15</option>
+            <option value='15'>Nivel 16</option>
+            <option value='16'>Nivel 17</option>      
+            <option value='17'>Nivel 18</option>
           </select>
         
      </form>
