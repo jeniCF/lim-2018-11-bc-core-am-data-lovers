@@ -4,6 +4,7 @@ body {
       background-repeat: no-repeat repeat;
       background-position: center center;
       background-color: #000A0A;
+      position: relative;
   }
   
   header{
@@ -105,8 +106,16 @@ body {
    }
    
    .nidalee{
+    position: relative;
     height: 372px;
     width: 1336px;
+    object-fit: cover;
+    max-height: 350px;
+    transform: rotate(-0.02deg);
+   }
+
+   .nidalee-img{
+    position: absolute;
     object-fit: cover;
     max-height: 350px;
     overflow: hidden; 
@@ -114,28 +123,70 @@ body {
     background-position: top;
     background-size: cover;
    }
-  
+   .nidalee-text-container{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(208, 154, 45, 0.77);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40%;
+    height: 45%;
+    transform: translate(143%, 150%);
+   }
+
+   .nidalee-text{
+    position: absolute;
+   }
+
+   .nidalee-avalaible{
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #E9B927;
+  }
+
+   .nidalee-new{
+    font-family: Patua One;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 28px;
+    text-align: center;
+    color: #FFF2CB;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   }
    .neeko{
-    background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-reveal-neeko/es_AR/b85d977b38b2c511e838a1b03ba51b581ce4f2af/assets/img/content/neeko/wallpaper/neeko-splash.jpg');
-   mix-blend-mode: screen;
-   opacity: 0.4;
-   filter: blur(25px);
-   background-position: top;
+   position: relative;
    height: 372px;
    width: 1336px;
-   object-fit: cover;
    max-height: 350px;
-   overflow: hidden; 
-   background-position: top;
-   background-size: cover;
    margin: 30px 0px;
+   position: relative;
+   }
+
+   .neeko-img{
+     position: absolute;
+    mix-blend-mode: screen;
+    opacity: 0.4;
+    filter: blur(25px);
+    position: absolute;
+    object-fit: cover;
+    max-height: 350px;
+    overflow: hidden; 
+    background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-reveal-neeko/es_AR/b85d977b38b2c511e838a1b03ba51b581ce4f2af/assets/img/content/neeko/wallpaper/neeko-splash.jpg');
    }
   
    .banner{
     width: 1318px;
     height: 75px;
-   
-   }
+    position: relative;
+    background-color:none;  
+  }
    .description{
     position: relative;
     margin-top: -38px;
@@ -155,12 +206,7 @@ body {
     object-fit:cover;
     background-size: cover;
     background-position: center;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
     background-image: url('https://i.imgur.com/LoO4EBF.jpg');
-    z-index:-1;
    }
   
    .lol-def{
@@ -358,27 +404,35 @@ body {
   }
   
   .name-title{
-    background-color: yellow;
     width: 40%;
   }
   
   .info{
-    background-color: red;
-    width: 26%;
+    width: 22%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
   }
   
   .hp-stats{
-    background-color: blue;
-    width: 15%;
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   
+ 
   .select-hp-stats{
-    background-color: green;
-    width: 17%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
   }
   
+  .select-hp{
+    align-self: center;
+ 
+   }
   .champion-name-modal{
   font-family: Lora;
   font-style: normal;
@@ -406,11 +460,13 @@ body {
   font-style: italic;
   font-weight: bold;
   line-height: normal;
-  font-size: 16px;
+  font-size: 17px;
   color: #F2994A;
   margin-bottom: -10%;
   margin-left: 10%;
-  margin-top: 9%;
+  margin-top: 8%;
+  align-self: center;
+
 }
 
 progress{
@@ -422,7 +478,15 @@ progress{
 }
 
 .hp-number, .mp-number, .armor-number, .attackdamage-number{
-  
+font-family: Cormorant Garamond;
+font-style: italic;
+font-weight: bold;
+line-height: normal;
+font-size: 16px;
+color: #F2CF66;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-top: 4%;
+margin-bottom: 4%;
 
 }
 .video {

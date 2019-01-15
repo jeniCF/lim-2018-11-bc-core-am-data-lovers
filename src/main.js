@@ -60,10 +60,10 @@ let functionChampions = (championsData) => {
     </div>
     
     <div class = 'hp-stats'>
-    <p class= 'hp-number'> Salud: ${data.stats.hp}</p>
-    <p class= 'mp-number'> Penetración mágica: ${data.stats.mp}</p>
-    <p class= 'armor-number'> Armadura: ${data.stats.armor}</p>
-    <p class= 'attackdamage-number'> Daño de ataque: ${data.stats.attackdamage}</p>
+    <p class= 'hp-number'> Salud: ${data.stats.hp.toFixed(2)}</p>
+    <p class= 'mp-number'> Penetración mágica: ${data.stats.mp.toFixed(2)} </p>
+    <p class= 'armor-number'> Armadura: ${data.stats.armor.toFixed(2)}</p>
+    <p class= 'attackdamage-number'> Daño de ataque: ${data.stats.attackdamage.toFixed(2)}</p>
 
     </div>
     <div class= 'select-hp-stats'>
