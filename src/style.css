@@ -1,6 +1,8 @@
+
+
 body {
   /*     background-image: url("https://cdn.vox-cdn.com/uploads/chorus_image/image/59370373/Institute_of_War.0.jpg");
-   */    background-size: cover;
+   */ background-size: cover;
       background-repeat: no-repeat repeat;
       background-position: center center;
       background-color: #000A0A;
@@ -107,7 +109,7 @@ body {
    
    .nidalee{
     height: 372px;
-    width: 1336px;
+    width: 100%;
     object-fit: cover;
     max-height: 350px;
     transform: rotate(-0.02deg);
@@ -504,11 +506,114 @@ border-top: 4px solid rgba(208, 154, 45, 0.77);
 margin: 40px 0px;
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 400px){
   .home-text {
-  margin: 10%;
-  font-size: 15px;
-
-
+    margin: center;
+    margin: 5.5%;
+    font-size: 13px;
   }
-}
+  .lol-logo{
+    position: static;
+    height: 100%;
+    padding: 0px;
+    width: 200px;
+    display: block;
+  }
+
+  .header-text{
+    font-size: 24px;
+    top: 90px;
+    left: 30%;
+    }
+
+  .button-text{
+    
+    font-size: 20px;
+  }
+
+  .nidalee{
+    height: 100px;
+    width: 100%;
+   }
+
+   .nidalee-img{
+    height: 100px;
+    width: 100%;
+   }
+
+   .neeko{
+    height: 100px;
+    width: 100%;
+   }
+
+   .neeko-img{
+    
+    height: 100px;
+    width: 100%;
+    
+   }
+
+   .banner{
+    width: 100%;
+    height:100%;
+   }
+
+   .nidalee-avalaible{
+  
+    font-size: 8px;
+    
+  }
+
+  .nidalee-new{
+    
+    font-size: 6px;
+   }
+   
+   .description{
+    height: 200px;
+    width: 100%;
+    margin-top: -3px;
+
+   }
+
+   .description-img{
+    height: 170px;
+    width: 100%;
+   }
+
+   .p-description{
+    
+    font-size: 8px;
+    padding: 0px 20px 0px 20px;
+    letter-spacing: 0em;
+    line-height: 13px;
+
+  
+  }
+  .lol-def{
+
+   font-size: 14px;
+   padding: 15px; 
+  }
+  .button-register{
+    font-size: 7px;
+    line-height: 14px;
+    padding: 7px;
+    }
+
+    .video {
+      width: 100%;
+      height: 200px;
+    }
+    footer{
+      font-size: 6px;
+      text-align: center;
+      margin: 4px 0px;
+      }
+      .modal-splash {
+        width: 100%;
+        max-width: 300px;
+      }
+  }
+  

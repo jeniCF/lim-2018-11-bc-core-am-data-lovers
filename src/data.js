@@ -19,7 +19,7 @@ let filterChampions = ((data, arrValuesCheck) => {
   return functionFilter;
 });
   
-  /* Funcion ordenado
+/* Funcion ordenado
    */
 const sortFunction = (data, select) => {
   let arrayData = [];
